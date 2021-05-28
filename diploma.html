@@ -128,7 +128,7 @@
                 margin: 10px 0;
             }
 
-            .video .rating .streaming {
+            .video .video-rating .streaming {
                 background: #FB2F2F;
                 border-radius: 6px;
                 padding: 7px 0;
@@ -137,7 +137,7 @@
                 text-align: center;
             }
 
-            .video .rating .streaming span {
+            .video .video-rating .streaming span {
                 margin-left: 6px;
             }
 
@@ -221,6 +221,11 @@
                 box-shadow: 0px 0px 0px 1px rgba(17, 36, 89, 1);
             }
 
+            .invest .buttons .btn img,
+            .video .available-sessions .buttons .btn img {
+                width: 15px;
+            }
+
             .invest .buttons .btn,
             .video .available-sessions .buttons .btn {
                 font-size: 14px;
@@ -274,6 +279,7 @@
                 border-radius: 50%;
                 width: 100px;
                 height: 100px;
+                margin-right: 0 !important;
             }
 
             .video .reviews .person .info img {
@@ -488,6 +494,10 @@
                 transition: all .3s ease-in-out;
             }
 
+            .certifications .carousel .carousel-item {
+                margin-left: 0 !important
+            }
+
             @media (min-width: 768px) {
                 .certifications .carousel .links {
                     width: 42%;
@@ -597,7 +607,7 @@
                                 <a href="#"><img src="./new-imgs/bag.png" alt="bag"></a>
                             </div>
                         </div>
-                        <div class="rating d-none d-lg-flex align-items-center">
+                        <div class="video-rating d-none d-lg-flex align-items-center">
                             <strong>4.5</strong>
                             <img class="mx-2" src="./new-imgs/star.png" alt="start">
                             <small>(255تقييم)</small>
@@ -688,7 +698,7 @@
                                 <a href="#"><img src="./new-imgs/bag.png" alt="bag"></a>
                             </div>
                         </div>
-                        <div class="rating  d-flex d-lg-none align-items-center  mb-3 mb-lg-0">
+                        <div class="video-rating  d-flex d-lg-none align-items-center  mb-3 mb-lg-0">
                             <strong>4.5</strong>
                             <img class="mx-2" src="./new-imgs/star.png" alt="start">
                             <small>(255تقييم)</small>
@@ -980,7 +990,7 @@
                     </div>
                 </div>
                 <div class="qoute mt-5 text-center">
-                    <div class="row justify-content-center">
+                    <div class="d-flex justify-content-center">
                         <div class=" align-self-end">
                             <img class="img-fluid" src="./new-imgs/quote-right.png" alt="qoute">
                         </div>
@@ -1171,7 +1181,7 @@
                 </div>
             </div>
         </section>
-        <section class="common-questions">
+        <section class="common-questions pb-5">
             <div class="text-center mb-5">
                 <h2 class="h1">الاسئلة الشائعة</h2>
                 <div class="divider"></div>
@@ -1262,7 +1272,7 @@
 
                     $(".carousel .carousel-inner > div")
                         .eq($(this).data("slide-to"))
-                        .fadeIn().siblings().fadeOut();;
+                        .fadeIn().siblings().fadeOut();
                 })
 
                 let tabs = $('.carousel .links ul li');
