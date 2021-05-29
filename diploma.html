@@ -494,13 +494,30 @@
                 transition: all .3s ease-in-out;
             }
 
-            .certifications .carousel .carousel-item {
-                margin-left: 0 !important
+            .certifications .carousel .fade-carousel {
+                min-height: 366px;
+                position: relative;
+            }
+
+            .certifications .carousel .fade-carousel .fade-item {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .certifications .carousel .fade-item {
+                margin-left: 0 !important;
+            }
+
+            .certifications .carousel .fade-item:not(.active) {
+                display: none;
             }
 
             @media (min-width: 768px) {
                 .certifications .carousel .links {
-                    width: 42%;
+                    width: 60%;
                 }
 
                 .certifications .carousel .links li {
@@ -518,13 +535,19 @@
 
             }
 
+            @media (min-width: 991px) {
+                .certifications .carousel .links {
+                    width: 42%;
+                }
+            }
+
             /* start invest */
             .invest .buttons button {
                 width: 165px;
                 margin-left: 20px;
             }
 
-            .invest .text .wrapper span {
+            .invest .text .wrapper .text span {
                 color: #42B39A;
                 font-size: 24px;
             }
@@ -678,7 +701,10 @@
                                         </label>
                                     </div>
                                     <div class="mt-4 d-flex justify-content-center justify-content-lg-start buttons ">
-                                        <a href="#" class="btn register"> سجل الآن</a>
+                                        <a href="#"
+                                            class="btn register d-flex align-items-center justify-content-center"><span>
+                                                سجل
+                                                الآن</span></a>
                                         <button class="btn whats-app"> واتس اب</button>
                                         <button class="btn download"> تنزيل دليل الدبلوم
                                             <img class="ml-2" src="./new-imgs/fi-sr-download.png" alt="download">
@@ -777,7 +803,10 @@
                                     </div>
                                     <div
                                         class="mt-4 d-flex buttons justify-content-center justify-content-lg-start buttons ">
-                                        <a href="#" class="btn register"> سجل الآن</a>
+                                        <a href="#"
+                                            class="btn register d-flex align-items-center justify-content-center"><span>
+                                                سجل
+                                                الآن</span></a>
                                         <button class="btn whats-app"> واتس اب</button>
                                         <button class="btn download"> تنزيل دليل الدبلوم
                                             <img class="ml-2" src="./new-imgs/fi-sr-download.png" alt="download">
@@ -1102,13 +1131,13 @@
                     <div class="links d-block d-lg-flex text-center">
                         <div class="sliding-line d-none d-md-block"></div>
                         <ul class="d-flex justify-content-center  p-0">
-                            <li data-target="#carousel" data-slide-to="0" class="active">
+                            <li data-slide-to="0" class="active">
                                 <div class="mb-2">
                                     <img src="./new-imgs/coursentelli-certifi.svg" alt="coursentelli-certificate">
                                 </div>
                                 شهادة كورسنتلي
                             </li>
-                            <li data-target="#carousel" data-slide-to="1">
+                            <li data-slide-to="1">
                                 <div class="mb-2">
                                     <img src="./new-imgs/ukuni.svg" alt="united kingdom university">
                                 </div>
@@ -1116,10 +1145,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div class="fade-carousel">
+                        <div class="fade-item active">
                             <div class="row">
-                                <div class="col-12 col-lg-7">
+                                <div class="col-12 col-lg-7 d-flex justify-content-center justify-content-lg-start">
                                     <img class="img-fluid" src="./new-imgs/شهادة كورسنتلى.png" alt="شهادة">
                                 </div>
                                 <div class="col-12 col-lg d-flex align-items-center text-center text-lg-left">
@@ -1131,9 +1160,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="fade-item">
                             <div class="row">
-                                <div class="col-12 col-lg-7">
+                                <div class="col-12 col-lg-7 d-flex justify-content-center justify-content-lg-start">
                                     <img class="img-fluid" src="./new-imgs/شهادة كورسنتلى.png" alt="شهادة">
                                 </div>
                                 <div class="col-12 col-lg d-flex align-items-center  text-center text-lg-left">
@@ -1164,13 +1193,14 @@
                     </div>
                     <div class="col-12 col-lg-7 d-flex align-items-center  mb-5 mb-lg-0 text-center text ">
                         <div class="wrapper w-100 ">
-                            <div class="div ">
+                            <div class="text ">
                                 <h3 class="mb-3 font-weight-bold">استثمر في نفسك</h3>
                                 <span class="mr-5 "><strong>1850</strong>ريال سعودي</span>
                                 <span><strong>495</strong>دولار</span>
                             </div>
                             <div class=" mt-4 d-inline-flex justify-content-around buttons ">
-                                <a href="#" class="btn register"> سجل الآن</a>
+                                <a href="#" class="btn register d-flex justify-content-center align-items-center"><span>
+                                        سجل الآن</span></a>
                                 <button class="btn whats-app"> واتس اب</button>
                                 <button class="btn download"> تنزيل دليل الدبلوم
                                     <img class="ml-2" src="./new-imgs/fi-sr-download.png" alt="download">
@@ -1264,19 +1294,32 @@
             $(document).ready(function () {
                 //============================================
                 //  sliding through the carousel
-                //============================================    
+                //============================================
+                function adjustCarouselHeight() {
+                    $('.certifications .carousel .fade-carousel').css({
+                        minHeight: $('.certifications .carousel .fade-carousel .fade-item > .row').height()
+                    })
+                }
+                adjustCarouselHeight();
 
-                $(".carousel .links li").on("click", function () {
+                $('.carousel .links li').on('click', function () {
+                    var fadeIndex = $(this).attr('data-slide-to');
 
-                    $(this).addClass("active").siblings().removeClass("active");
+                    //fade in the clicked item & fade out the current one
+                    if (!$(this).hasClass('active')) {
+                        $('.certifications .carousel .fade-item.active').fadeOut(function () {
+                            $(this).removeClass("active")
+                            $('.certifications .carousel .fade-item').eq(fadeIndex).fadeIn().addClass("active").siblings().removeClass("active").hide();
+                        }, 0)
+                    }
 
-                    $(".carousel .carousel-inner > div")
-                        .eq($(this).data("slide-to"))
-                        .fadeIn().siblings().fadeOut();
-                })
+                    //changeng links active state
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
 
+
+                //sliding the line under links
                 let tabs = $('.carousel .links ul li');
-
                 function slideToActive() {
                     let slidingLine = $('.carousel .links .sliding-line'),
                         activeTab = $('.carousel .links ul li.active'),
@@ -1289,6 +1332,7 @@
 
                 $(window).on("resize", function () {
                     slideToActive();
+                    adjustCarouselHeight();
                 });
                 $(tabs).on("click", function () {
                     slideToActive();
