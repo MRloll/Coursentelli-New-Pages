@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="Ar" dir="rtl">
+
+    <head>
+        <meta name="google-site-verification" content="ccWBwCgrIbn9F0nyC3VV7LAoYb1UrampKUyDVmVcA2A" />
+        <!-- Required meta tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>كورسنتلى</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+            integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+        <!-- <link rel="stylesheet" href="css/main.css" /> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        <style>
+            * {
+                font-family: 'Cairo', sans-serif;
+            }
+
+            @media (min-width: 1400px) {
+                .container {
+                    max-width: 1320px;
+                }
+            }
+
+            html,
+            body {
+                position: relative;
+                overflow-x: hidden;
+            }
+
+            .top-elipse {
+                position: absolute;
+                top: -221px;
+                left: -43%;
+                z-index: -1;
+                opacity: 0.08;
+            }
+
+            .right-elipse {
+                top: 338px;
+                left: auto;
+                right: -63%;
+            }
+
+
+            section {
+                margin-top: 70px;
+            }
+
+            h1,
+            .h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            p.lead {
+                font-size: 16px;
+            }
+
+            .divider {
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                border: 1px solid #fc8e0b;
+                border-radius: 50%;
+                position: relative;
+                margin: auto;
+            }
+
+            .divider::before,
+            .divider::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 50px;
+                width: 180px;
+                height: 2px;
+                background: #42b39a;
+            }
+
+            .divider::before {
+                right: 50px;
+            }
+
+            .vertical-divider {
+                width: 1px;
+                margin: 0 10px;
+                opacity: 50%;
+                background-color: rgba(17, 36, 89, 0.3);
+            }
+
+            @media (min-width:576px) {
+                .top-elipse {
+                    left: -9%;
+                }
+
+                .right-elipse {
+                    right: -13%;
+                }
+            }
+
+            @media (max-width: 575px) {
+
+                .divider::before,
+                .divider::after {
+                    width: 100px;
+                }
+            }
+
+            section {
+                color: #112459;
+            }
+
+            /* start home intro */
+            .home-intro .links a {
+                font-size: 14px;
+                width: 210px;
+                border-radius: 6px;
+                transition: background-color 0.5s ease;
+                margin-left: 25px;
+            }
+
+            .home-intro .links a:first-of-type {
+                background: #42B39A;
+                border-color: #42B39A;
+                color: white;
+            }
+
+            .home-intro .links a:last-of-type {
+                border-color: #112459;
+                margin-left: 0;
+            }
+
+            .home-intro .links a:last-of-type:hover {
+                background: #112459;
+                color: white;
+            }
+
+
+            .home-intro .links a img {
+                margin-right: 10px;
+                width: 20px;
+            }
+
+            @media (max-width: 575px) {
+                .home-intro .links a {
+                    margin-bottom: 20px;
+                }
+            }
+
+            /* advantgaes of the diploma */
+            .advantages .item {
+                border-radius: 6px;
+                transition: all 1s ease;
+                padding: 100px 30px;
+                height: 100%;
+                border: 1px solid rgba(17, 36, 89, 0.06);
+                line-height: 1.9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .advantages .item:hover {
+                background: #112459;
+                color: white;
+            }
+
+            .advantages .item h6 {
+                font-size: 15px;
+            }
+
+            /* start dev-skills   */
+            .dev-skills .carousel .links {
+                box-shadow: none;
+                position: relative;
+                margin: auto;
+                width: 88%;
+            }
+
+            .dev-skills .carousel .links ul {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .dev-skills .carousel .links li {
+                padding-bottom: 20px;
+                display: inline-block;
+                list-style: none;
+                cursor: pointer;
+                transition: all 1s ease;
+                border-bottom: 3px solid transparent;
+                flex-grow: 1;
+                font-size: 10px;
+                flex-basis: 50%;
+                margin: 0;
+                margin-bottom: 30px;
+
+            }
+
+            .dev-skills .carousel .links li.active {
+                border-color: #42B39A;
+            }
+
+            .dev-skills .carousel .links li svg path {
+                transition: all 1s ease;
+            }
+
+            .dev-skills .carousel .links li.active svg path {
+                fill: #42B39A;
+            }
+
+            .dev-skills .carousel .links li img {
+                width: 41px;
+                height: 43px;
+            }
+
+
+            .dev-skills .carousel .links .sliding-line {
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                box-shadow: 0 3px #42B39A;
+                transition: all .3s ease-in-out;
+            }
+
+            .dev-skills .carousel .fade-carousel {
+                min-height: 366px;
+                position: relative;
+            }
+
+
+            .dev-skills .carousel .fade-carousel .fade-item:not(.instructors) img {
+                width: 50%;
+            }
+
+            .dev-skills .carousel .fade-item:not(.active) {
+                display: none;
+            }
+
+            .dev-skills .carousel .fade-item.instructors>.row>div {
+                margin-bottom: 100px;
+            }
+
+            .dev-skills .carousel .fade-item .instructor .desc {
+                position: absolute;
+                bottom: -61px;
+                background: white;
+                left: -10px;
+                padding: 12px;
+                font-size: 13px;
+                border-radius: 6px;
+            }
+
+            .dev-skills .carousel .fade-item .instructor .desc p {
+                margin-bottom: 7px;
+            }
+
+            .dev-skills .carousel .fade-item .instructor .desc h5 {
+                margin-bottom: 13px;
+                font-size: 15px;
+            }
+
+            .dev-skills .carousel .fade-item .instructor .desc img {
+                width: 19px;
+            }
+
+            @media (min-width: 768px) {
+                .dev-skills .carousel .links {
+                    box-shadow: 0px 2px 0px 0px #E1E1E1;
+                }
+
+                .dev-skills .carousel .links ul {
+                    flex-wrap: nowrap;
+                }
+
+                .dev-skills .carousel .links li {
+                    flex-basis: unset;
+                    margin-bottom: 0;
+                    border-color: transparent;
+                    font-size: 12px;
+                }
+
+                .dev-skills .carousel .links li:not(:last-of-type) {
+                    margin-left: 30px;
+                }
+
+                .dev-skills .carousel .links li {
+                    font-size: 15px;
+                }
+
+                .dev-skills .carousel .links li.active {
+                    border-color: transparent;
+                }
+
+                .dev-skills .carousel .links li img {
+                    width: 55px;
+                    height: 61px;
+                }
+
+                .dev-skills .carousel .fade-carousel .fade-item:not(.instructors) img {
+                    width: 100%;
+                }
+
+
+            }
+
+            /* start features */
+            .features .one-feature {
+                margin-bottom: 100px;
+            }
+
+            .features .arrow {
+                position: absolute;
+                display: none;
+            }
+
+
+            @media (min-width: 991px) {
+
+                .features .one-feature:nth-of-type(2) {
+                    margin-left: 586px;
+                }
+
+                .features .one-feature:last-of-type {
+                    margin-right: 422px;
+                    margin-top: -222px;
+                }
+
+                .features .one-feature {
+                    width: 50%;
+                }
+
+                .features .arrow {
+                    display: block;
+                }
+
+                .features .down-arrow {
+                    top: 240px;
+                    left: -62px;
+                    width: 431px;
+                }
+
+                .features .up-arrow {
+                    top: 248px;
+                    right: -67px;
+                    width: 406px;
+                }
+            }
+
+            @media (min-width:1200px) {
+                .features .one-feature {
+                    width: auto;
+                }
+
+                .features .one-feature img {
+                    width: 600px;
+                }
+
+                .features .down-arrow {
+                    top: 281px;
+                    left: 8px;
+                }
+
+                .features .up-arrow {
+                    top: 294px;
+                    right: -24px;
+                    width: 430px;
+                }
+            }
+
+
+            @media (min-width:1400px) {
+                .features .one-feature img {
+                    width: auto;
+                }
+
+                .features .down-arrow {
+                    top: 353px;
+                    left: -114px;
+                    width: 600px;
+                }
+
+                .features .up-arrow {
+                    top: 294px;
+                    right: -24px;
+                    width: 430px;
+                }
+            }
+
+            /* start departments */
+            .departments .item {
+                border: 1px solid #dddfe4;
+                padding: 30px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 1s ease;
+                height: 100%;
+            }
+
+            .departments .item:hover {
+                background: #D6F1F9;
+            }
+
+            .departments .item a.orange {
+                background: #FC8E0B;
+            }
+
+            .help .help-btn,
+            .departments .item a {
+                background: #42B39A;
+                width: 100px;
+            }
+
+            /* start testemonials */
+            .testemonials .trainees .height {
+                display: flex;
+                flex-flow: column;
+            }
+
+            .testemonials .trainees .img {
+                margin: 0 0 75px 20px;
+                cursor: pointer;
+                opacity: 30%;
+                transition: opacity 1s ease;
+            }
+
+            .testemonials .trainees:last-of-type .img {
+                margin: 0 20px 75px 0;
+            }
+
+            .testemonials .trainees .img.active {
+                opacity: 100%;
+            }
+
+            .testemonials .trainees .img img {
+                border-radius: 50%;
+                width: 110px;
+                height: 110px;
+            }
+
+            .testemonials .testems {
+                width: 100%;
+            }
+
+            .testemonials .testems .one-testem {
+                display: none;
+                justify-content: space-between;
+            }
+
+            .testemonials .testems .one-testem.active {
+                display: block;
+            }
+
+            .testemonials .testems .one-testem .wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .testemonials .testems .one-testem .wrapper h6 {
+                color: #42B39A;
+            }
+
+            .testemonials .testems .one-testem .img {
+                margin-right: 20px;
+                min-width: 80px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="position-relative">
+            <img class="top-elipse" src="./new-imgs/ellipse_8.png" alt="elipse">
+        </div>
+        <section class="home-intro">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="h1">كورسنتلي</h2>
+                    <p>عزز مهاراتك وقدراتك من خلال العديد من البرامج والدبلومات حتى تحقق أهدافك</p>
+                    <div class="links">
+                        <a href="#" class="btn"><span>اعرف المزيد</span> <img src="./new-imgs/fi-rr-arrow-left.svg"
+                                alt="arrow-left"></a>
+                        <a href="#" class="btn"><span>فديو تعريفي</span> <img src="./new-imgs/fi-rr-play-alt.svg"
+                                alt="play"></a>
+                    </div>
+                </div>
+                <div class="img text-center">
+                    <img class="img-fluid" src="./new-imgs/هيدر.svg" alt="header">
+                </div>
+            </div>
+        </section>
+        <section class="advantages text-center">
+            <div class="text-center mb-0 mb-sm-4">
+                <h2 class="h1">مميزات الدبلوم</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/skill.svg" alt="skill">
+                                </div>
+                                <h6 class="mt-4">اكتسب مهارة جديدة</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/be-ready.svg" alt="ready">
+                                </div>
+                                <h6 class="mt-4">كن جاهزاً للحصول على وظيفة</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/certificate.svg" alt="certificate">
+                                </div>
+                                <h6 class="mt-4">احصل على شهادة معتمدة</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/united.svg" alt="united">
+                                </div>
+                                <h6 class="mt-4">عزز مهارات فريقك</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dev-skills">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="h1">طور مهاراتك وكن جاهزا لسوق العمل</h2>
+                    <p>تعلم ونمي مهاراتك و زد من خبراتك في مجالات متعددة ومخصصة بشكل أسرع يضمن لك المنافسة في سوق العمل
+                        اكتشف كيف يمكن أن يكون التدريب ممتع وسهل في كورسنتلي</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="carousel">
+                    <div class="links d-block d-lg-flex text-center">
+                        <div class="sliding-line d-none d-md-block"></div>
+                        <ul class="d-flex justify-content-center  p-0">
+                            <li data-slide-to="0">
+                                <div class="mb-2">
+                                    <svg id="working" xmlns="http://www.w3.org/2000/svg" width="54.204" height="53.121"
+                                        viewBox="0 0 54.204 53.121">
+                                        <path id="Path_1047" data-name="Path 1047"
+                                            d="M420.62,49.022l2.954,2.058a.794.794,0,0,0,.908-1.3l-2.614-1.821V44.314a.794.794,0,0,0-1.588,0V48.37A.8.8,0,0,0,420.62,49.022Z"
+                                            transform="translate(-375.786 -39.454)" fill="#112459" />
+                                        <path id="Path_1048" data-name="Path 1048"
+                                            d="M52.789,184.645A2.706,2.706,0,0,0,53,183.608v-.441a.794.794,0,0,0-1.588,0v.441a1.12,1.12,0,0,1-.291.754H33.43a1.119,1.119,0,0,1-.291-.754v-5.365a4.269,4.269,0,0,0,2.7.961h.45v.672a.794.794,0,0,0,1.588,0V179.2H46.67v.672a.794.794,0,0,0,1.588,0V179.2h.45a4.269,4.269,0,0,0,2.7-.961v1.212a.794.794,0,1,0,1.588,0v-5.367a2.726,2.726,0,0,0-2.723-2.723H46.519v-1.01a2.4,2.4,0,0,0-2.4-2.4H40.43a2.4,2.4,0,0,0-2.4,2.4v1.01h-1.7V155.387a3.422,3.422,0,0,0-3.418-3.418H3.418A3.422,3.422,0,0,0,0,155.387V174.6a3.422,3.422,0,0,0,3.418,3.418H14.681l-.73,3.18H12.9a2.567,2.567,0,0,0-2.5,3.163H2.59a2.59,2.59,0,1,0,0,5.181H51.614a2.59,2.59,0,0,0,1.175-4.9ZM23.429,181.2H22.375l-.73-3.18h9.906v5.588a2.7,2.7,0,0,0,.109.754H25.924a2.567,2.567,0,0,0-2.5-3.163Zm27.981-7.111v.826a2.705,2.705,0,0,1-2.7,2.7h-.45v-.672a.794.794,0,0,0-1.588,0v.672H37.879v-.672a.794.794,0,1,0-1.588,0v.672h-.45a2.705,2.705,0,0,1-2.7-2.7v-.826a1.14,1.14,0,0,1,1.135-1.135h16a1.137,1.137,0,0,1,1.135,1.135Zm-11.792-3.733a.814.814,0,0,1,.813-.813h3.688a.814.814,0,0,1,.813.813v1.01H39.618ZM1.588,174.6v-.993H5.214a.794.794,0,1,0,0-1.588H1.588V155.387a1.832,1.832,0,0,1,1.83-1.83h29.49a1.832,1.832,0,0,1,1.83,1.83v15.978h-.464a2.711,2.711,0,0,0-1.769.655H8.926a.794.794,0,1,0,0,1.588H31.594a2.729,2.729,0,0,0-.043.48v2.343H3.418a1.832,1.832,0,0,1-1.83-1.83ZM16.31,178.02h3.706l.73,3.18H15.58Zm-4.391,5.746a.979.979,0,0,1,.978-.978H23.429a.979.979,0,0,1,.978.978.969.969,0,0,1-.205.6H12.125a.969.969,0,0,1-.205-.6Zm39.694,4.19H2.59a1,1,0,0,1,0-2H51.614a1,1,0,1,1,0,2Z"
+                                            transform="translate(0 -136.422)" fill="#112459" />
+                                        <path id="Path_1049" data-name="Path 1049"
+                                            d="M352.477,22.947a8.916,8.916,0,1,0-8.916-8.916A8.926,8.926,0,0,0,352.477,22.947Zm0-16.244a7.328,7.328,0,1,1-7.328,7.328A7.336,7.336,0,0,1,352.477,6.7Z"
+                                            transform="translate(-307.189 -5.115)" fill="#112459" />
+                                    </svg>
+                                </div>
+                                تدرب في أي مكان وأي زمان
+                            </li>
+                            <li data-slide-to="1">
+                                <div class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.8" height="53.121"
+                                        viewBox="0 0 53.8 53.121">
+                                        <g id="do-what-you-learn" transform="translate(0 0)">
+                                            <path id="Path_1054" data-name="Path 1054"
+                                                d="M51.257,171.32l-14.136,8.426a2.472,2.472,0,0,0-1.041,3,2.643,2.643,0,0,1-1.982.027l-1.829-.718a3.7,3.7,0,0,0-2.277-.144l-2.8.709q-.163.041-.319.1c-1.712-.977-2.731-1.269-4.538-.571l-1.622.627a2.65,2.65,0,0,1-2.32-.194l-.542-.319a2.472,2.472,0,0,0-1.172-2.513L2.543,171.32A1.682,1.682,0,0,0,0,172.764v15.78a3.124,3.124,0,0,0,1.517,2.671l6.172,3.679a2.465,2.465,0,0,0,3.339-.786l.264.156-.8,1.115a2.773,2.773,0,0,0,2.736,4.348,2.771,2.771,0,0,0,3.226,2.314,2.773,2.773,0,0,0,3.886,2.113,2.774,2.774,0,0,0,4.764.8l2.073,1.228a2.773,2.773,0,0,0,4.176-2.141l.081.048a2.776,2.776,0,0,0,4.185-2.247,2.778,2.778,0,0,0,3.508-2.456,2.774,2.774,0,0,0,3.159-4.391l.812-.475a2.467,2.467,0,0,0,3.013.379L47.6,194a.788.788,0,1,0-.807-1.354l-1.492.889a.891.891,0,0,1-1.056-.107c-.005-.044-6.63-11.115-6.63-11.115a.892.892,0,0,1,.31-1.219l14.136-8.426a.105.105,0,0,1,.16.091v15.78a1.54,1.54,0,0,1-.748,1.317l-1.49.888a.788.788,0,1,0,.807,1.354l1.49-.888a3.124,3.124,0,0,0,1.517-2.671v-15.78A1.681,1.681,0,0,0,51.257,171.32ZM30.379,183.439a2.14,2.14,0,0,1,1.314.083l1.833.72a4.211,4.211,0,0,0,3.331-.116l5.374,9.07-.871.509a4.219,4.219,0,0,0-.454.311L29.413,187.21a.788.788,0,0,0-1.19.678v.158a2.1,2.1,0,0,1-2.1,2.1.176.176,0,0,1-.171-.171v-3.74a2.149,2.149,0,0,1,1.154-1.907.789.789,0,0,0,.1-.049,2.166,2.166,0,0,1,.368-.129Zm-21.207,10.2a.885.885,0,0,1-.676-.1l-6.172-3.679a1.54,1.54,0,0,1-.748-1.317v-15.78a.1.1,0,0,1,.053-.092.107.107,0,0,1,.053-.015.1.1,0,0,1,.053.016L15.872,181.1a.892.892,0,0,1,.31,1.219L9.718,193.229A.884.884,0,0,1,9.172,193.638Zm3.766,4.538a1.2,1.2,0,0,1-1.166-1.879l1.124-1.566a1.2,1.2,0,0,1,.088-.108.79.79,0,0,0,.067-.067,1.2,1.2,0,0,1,1.79,1.572l0,0-1.123,1.564a1.189,1.189,0,0,1-.778.483Zm2.333,2.106a1.2,1.2,0,0,1-.274-1.67l1.124-1.566h0l1.241-1.728a1.189,1.189,0,0,1,.778-.483,1.207,1.207,0,0,1,.2-.016,1.2,1.2,0,0,1,.97,1.9l-2.365,3.295A1.2,1.2,0,0,1,15.271,200.283Zm4.117,2.524a1.2,1.2,0,0,1-1.166-1.879l0,0,2.363-3.292a1.2,1.2,0,1,1,1.945,1.4l-2.365,3.295A1.189,1.189,0,0,1,19.388,202.807Zm2.861,1.371a1.2,1.2,0,0,1-.274-1.67l0,0,.785-1.093a1.2,1.2,0,0,1,1.944,1.4l-.45.626-.014.019-.323.45a1.2,1.2,0,0,1-1.67.274Zm18.988-6.743a1.2,1.2,0,0,1-1.64.42l-1.822-1.079h0l-5.643-3.343a.788.788,0,1,0-.8,1.356l5.645,3.344h0a1.2,1.2,0,0,1-1.222,2.06l-1.485-.88,0,0h0L30.1,196.846a.788.788,0,0,0-.8,1.356l4.157,2.463h0a1.2,1.2,0,0,1-1.221,2.06l-2.229-1.32,0,0-1.63-.966a.788.788,0,1,0-.8,1.356l1.63.966h0a1.2,1.2,0,0,1-1.223,2.059l-1.951-1.156a2.772,2.772,0,0,0-1.9-4.3,2.772,2.772,0,0,0-3.058-3.765,2.773,2.773,0,0,0-4.763-1.484,2.772,2.772,0,0,0-3.92-1.036l-.559-.33,5.362-9.051.4.233a4.216,4.216,0,0,0,3.69.307l1.622-.627a2.552,2.552,0,0,1,2.469.084,3.722,3.722,0,0,0-.993,2.534v3.74a1.749,1.749,0,0,0,1.745,1.747h0a3.68,3.68,0,0,0,3.5-2.552l10.977,6.5a.782.782,0,0,0,.112.055.8.8,0,0,0,.1.072,1.2,1.2,0,0,1,.42,1.64Z"
+                                                transform="translate(0 -153.442)" fill="#112459" />
+                                            <path id="Path_1055" data-name="Path 1055"
+                                                d="M144.759,23.763h18.068a2.97,2.97,0,0,0,2.967-2.967V10.046a2.97,2.97,0,0,0-2.967-2.967h-4.349V5.831a2.606,2.606,0,0,0-2.6-2.6H151.71a2.606,2.606,0,0,0-2.6,2.6V7.08h-4.349a2.97,2.97,0,0,0-2.967,2.967v5.922a.788.788,0,0,0,1.576,0V14.5a4.717,4.717,0,0,0,3.16,1.211h.617v.867a.788.788,0,0,0,1.576,0v-.867h10.143v.867a.788.788,0,0,0,1.576,0v-.867h.617a4.717,4.717,0,0,0,3.16-1.211V20.8a1.392,1.392,0,0,1-1.39,1.39H144.759a1.392,1.392,0,0,1-1.39-1.39V19.652a.788.788,0,0,0-1.576,0V20.8a2.97,2.97,0,0,0,2.967,2.967Zm5.926-17.932A1.028,1.028,0,0,1,151.711,4.8h4.164A1.028,1.028,0,0,1,156.9,5.831V7.08h-6.217V5.831Zm10.373,8.307h-.617v-.867a.788.788,0,0,0-1.576,0v.867H148.721v-.867a.788.788,0,1,0-1.576,0v.867h-.617a3.163,3.163,0,0,1-3.16-3.16v-.932a1.392,1.392,0,0,1,1.39-1.39h18.068a1.392,1.392,0,0,1,1.391,1.39v.932A3.163,3.163,0,0,1,161.057,14.138Z"
+                                                transform="translate(-126.893 -3.228)" fill="#112459" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                طبق ما تعلمته
+                            </li>
+                            <li data-slide-to="2">
+                                <div class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.152" height="53.121"
+                                        viewBox="0 0 53.152 53.121">
+                                        <g id="ready-for-market" transform="translate(0 0)">
+                                            <path id="Path_1050" data-name="Path 1050"
+                                                d="M181.641,50.854H165.468a.779.779,0,0,0,0,1.557h16.173a.779.779,0,0,0,0-1.557Z"
+                                                transform="translate(-147.592 -45.59)" fill="#112459" />
+                                            <path id="Path_1051" data-name="Path 1051"
+                                                d="M181.641,94.756H165.468a.779.779,0,0,0,0,1.557h16.173a.779.779,0,0,0,0-1.557Z"
+                                                transform="translate(-147.592 -84.934)" fill="#112459" />
+                                            <path id="Path_1052" data-name="Path 1052"
+                                                d="M190.177,195.766h-4.622v-2.174a5.2,5.2,0,0,0-5.2-5.2h-8.753a5.2,5.2,0,0,0-5.2,5.2v2.174h-4.622a4.2,4.2,0,0,0-4.2,4.2v17.806a4.207,4.207,0,0,0,4.2,4.2h28.389a4.207,4.207,0,0,0,4.2-4.2V214.4a.779.779,0,1,0-1.557,0v3.374a2.648,2.648,0,0,1-2.645,2.645H161.788a2.648,2.648,0,0,1-2.645-2.645V206.739a6.973,6.973,0,0,0,5.148,2.586v1.189a2.845,2.845,0,0,0,5.691,0V209.33h12v1.183a2.845,2.845,0,0,0,5.691,0v-1.189a6.973,6.973,0,0,0,5.148-2.586v4.021a.779.779,0,1,0,1.557,0V199.968A4.2,4.2,0,0,0,190.177,195.766Zm-22.209-2.174a3.642,3.642,0,0,1,3.638-3.638h8.753A3.642,3.642,0,0,1,184,193.592v2.174h-1.621v-2.174a2.019,2.019,0,0,0-2.017-2.017h-8.753a2.019,2.019,0,0,0-2.017,2.017v2.174h-1.622Zm3.179,2.174v-2.174a.46.46,0,0,1,.46-.459h8.753a.46.46,0,0,1,.46.459v2.174Zm-2.721,14.747a1.288,1.288,0,1,1-2.576,0V207.73a1.288,1.288,0,0,1,2.576,0Zm17.691,0a1.288,1.288,0,1,1-2.576,0v-1.954s0-.005,0-.008,0-.005,0-.008v-.813a1.288,1.288,0,0,1,2.576,0Zm1.557-2.747v-.036a2.845,2.845,0,1,0-5.691,0v.043h-12v-.043a2.845,2.845,0,1,0-5.691,0v.036a5.431,5.431,0,0,1-5.148-5.417v-2.381a2.644,2.644,0,0,1,2.645-2.645h28.389a2.644,2.644,0,0,1,2.645,2.645v2.381a5.431,5.431,0,0,1-5.148,5.417Z"
+                                                transform="translate(-141.227 -168.854)" fill="#112459" />
+                                            <path id="Path_1053" data-name="Path 1053"
+                                                d="M15.356,51.71H3.85a2.3,2.3,0,0,1-2.293-2.293v-37.4a2.308,2.308,0,0,1,.053-.494H8.7a2.686,2.686,0,0,0,2.683-2.683V1.756a2.315,2.315,0,0,1,.494-.053h26.4A2.3,2.3,0,0,1,40.564,4V17.355a.779.779,0,1,0,1.557,0V4a3.855,3.855,0,0,0-3.85-3.85h-26.4A3.825,3.825,0,0,0,9.15,1.274L1.128,9.3A3.825,3.825,0,0,0,0,12.019v37.4a3.855,3.855,0,0,0,3.85,3.85H15.356a.779.779,0,1,0,0-1.557ZM9.822,2.8V8.842A1.127,1.127,0,0,1,8.7,9.968H2.658Z"
+                                                transform="translate(0 -0.146)" fill="#112459" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                كن مستعدا لسوق العمل
+                            </li>
+                            <li data-slide-to="3" class="active">
+                                <div class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.098" height="53.121"
+                                        viewBox="0 0 53.098 53.121">
+                                        <g id="instructors" transform="translate(0 0)">
+                                            <path id="Path_1045" data-name="Path 1045"
+                                                d="M331.034,11.763v2.616a1.18,1.18,0,0,0,2.015.835l3.285-3.285h8.294a3.063,3.063,0,0,0,3.06-3.06V3.06A3.063,3.063,0,0,0,344.629,0h-12.6a3.063,3.063,0,0,0-3.06,3.06V8.869a3.075,3.075,0,0,0,2.066,2.894Zm-.51-8.7a1.506,1.506,0,0,1,1.5-1.5h12.6a1.506,1.506,0,0,1,1.5,1.5V8.869a1.506,1.506,0,0,1-1.5,1.5H336.15a1.1,1.1,0,0,0-.785.325l-2.775,2.775V11.425a1.111,1.111,0,0,0-.874-1.085,1.509,1.509,0,0,1-1.191-1.471V3.06Z"
+                                                transform="translate(-294.849 0)" fill="#112459" />
+                                            <path id="Path_1046" data-name="Path 1046"
+                                                d="M51.144,101.79H49.665V77.325A2.927,2.927,0,0,0,46.741,74.4H32.188a.778.778,0,1,0,0,1.556H46.741a1.37,1.37,0,0,1,1.368,1.368V101.79H45.516V80.752a2.2,2.2,0,0,0-2.2-2.2H27.425a7.527,7.527,0,0,0,.458-1.879,1.847,1.847,0,0,0,1.446-1.8V68.146a2.805,2.805,0,0,0-2.778-2.8,2.805,2.805,0,0,0-2.8-2.708H16.775a5.443,5.443,0,0,0-5.437,5.437v6.8a1.847,1.847,0,0,0,1.447,1.8,7.526,7.526,0,0,0,.458,1.879H10.007a2.2,2.2,0,0,0-2.2,2.2v6.354a6.38,6.38,0,0,0-2.593,1.817v-11.6A1.37,1.37,0,0,1,6.58,75.957h1.94a.778.778,0,0,0,0-1.556H6.58a2.927,2.927,0,0,0-2.924,2.924V101.79H2.176a2.068,2.068,0,0,0-2.065,2.065,5.409,5.409,0,0,0,5.4,5.4H47.806a5.409,5.409,0,0,0,5.4-5.4A2.068,2.068,0,0,0,51.144,101.79Zm-7.83-21.685a.648.648,0,0,1,.647.647V101.79H37.015v-2.85a.778.778,0,1,0-1.556,0v2.85H31.725V99.322a.778.778,0,1,0-1.556,0v2.468H23.843l-1.677-9.456.643-1.153a1.755,1.755,0,0,0,1.611-.458l2.887-2.812a1.691,1.691,0,0,0,.433-.708l4.25,1.248a4.856,4.856,0,0,1,3.469,4.634V95.3a.778.778,0,0,0,1.556,0V93.085a6.421,6.421,0,0,0-4.587-6.127L27.3,85.451a1.708,1.708,0,0,0-.485-.326l-1.062-.473a2.07,2.07,0,0,0-.978-.175V81.99a7.657,7.657,0,0,0,1.838-1.885H43.314ZM14.525,86.537l1.042-.468a.517.517,0,0,1,.521.058l3.07,2.294L17.65,89.68a.218.218,0,0,1-.291-.009l-2.881-2.885h0a.154.154,0,0,1,.046-.249Zm8.69-3.68v2.375L20.4,87.409l-2.951-2.2V82.857a7.555,7.555,0,0,0,5.762,0Zm2.963,3.689a.154.154,0,0,1,.045.251l-2.884,2.808a.218.218,0,0,1-.294.009h0l-1.4-1.2,2.944-2.28a.516.516,0,0,1,.527-.063ZM19.766,91.42l-.58-1,1.22-1.019,1.092.934-.6,1.081Zm.2,1.556H20.7l1.563,8.815H18.409ZM33.59,103.346a2.18,2.18,0,0,1-2.033,1.4H21.763a2.18,2.18,0,0,1-2.033-1.4Zm-20.7-35.273a3.886,3.886,0,0,1,3.881-3.881h6.976A1.248,1.248,0,0,1,25,65.438,1.463,1.463,0,0,0,26.459,66.9h.068a1.248,1.248,0,0,1,1.246,1.246v3.643h-.621a.631.631,0,0,1-.631-.631v-.771a2.263,2.263,0,0,0-2.976-2.15,10.3,10.3,0,0,1-6.423,0l-.009,0a2.263,2.263,0,0,0-2.969,2.152v.771a.631.631,0,0,1-.631.631h-.621Zm0,6.8V73.344h.621A2.189,2.189,0,0,0,15.7,71.158v-.771a.709.709,0,0,1,.931-.673l.008,0a11.87,11.87,0,0,0,7.394,0,.709.709,0,0,1,.932.673v.771a2.189,2.189,0,0,0,2.186,2.186h.621V74.87a.288.288,0,0,1-.288.288,1.131,1.131,0,0,0-1.125,1.06,6.039,6.039,0,0,1-12.054,0,1.131,1.131,0,0,0-1.125-1.06A.288.288,0,0,1,12.894,74.87Zm-2.888,5.235H14.06A7.658,7.658,0,0,0,15.9,81.99v2.482a2.069,2.069,0,0,0-.967.178l-1.042.468a1.71,1.71,0,0,0-.481.325L9.36,86.631V80.752a.648.648,0,0,1,.647-.647Zm-4.8,12.98a4.856,4.856,0,0,1,3.47-4.634l.127-.037.009,0L12.959,87.2a1.711,1.711,0,0,0,.42.69h0l2.886,2.89.008.008a1.756,1.756,0,0,0,1.6.467l.636,1.093-1.675,9.448H10.5V99.322a.778.778,0,1,0-1.556,0v2.468H5.211Zm42.6,14.618H5.514a3.852,3.852,0,0,1-3.847-3.847.51.51,0,0,1,.51-.51H18.111a3.74,3.74,0,0,0,3.652,2.956h9.794a3.74,3.74,0,0,0,3.652-2.956H51.144a.51.51,0,0,1,.51.51A3.852,3.852,0,0,1,47.806,107.7Z"
+                                                transform="translate(-0.111 -56.137)" fill="#112459" />
+                                        </g>
+                                    </svg>
+
+                                </div>
+                                تعرف على المدربين
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fade-carousel mt-5">
+                        <div class="fade-item ">
+                            <div class="row">
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./new-imgs/X1.svg" alt="y1">
+                                </div>
+                                <div
+                                    class="col-12 col-md-4 d-flex align-items-center justify-content-center  text-center">
+                                    <p class="py-md-0 py-5">
+                                        اكسب وقتك وطور مهاراتك بالمكان المناسب لك
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./new-imgs/X2.svg" alt="y2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade-item ">
+                            <div class="row">
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./new-imgs/Y1.svg" alt="y1">
+                                </div>
+                                <div
+                                    class="col-12 col-md-4 d-flex align-items-center justify-content-center  text-center">
+                                    <p class="py-md-0 py-5">
+                                        رسِّخ معلوماتك ومارس من خلال مراجعتك
+                                        للدروس المسجلة
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./new-imgs/Y2.svg" alt="y2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade-item ">
+                            <div class="row">
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./new-imgs/W1.svg" alt="y1">
+                                </div>
+                                <div
+                                    class="col-12 col-md-4 d-flex align-items-center justify-content-center  text-center">
+                                    <p class="py-md-0 py-5">
+                                        من خلال طرق مبتكرة تسهل عليك تحقيق الأهداف
+                                        المطلوبة في وقت قياسي، نساعدك على فهم
+                                        وإدراك كافة المحاور للحصول على المهارات اللازمة
+                                        لسوق العمل
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./new-imgs/W2.svg" alt="y2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade-item instructors active">
+                            <div class="row">
+                                <div class="col-6 col-md-3 d-flex justify-content-center">
+                                    <div class="instructor position-relative">
+                                        <div class="instructor-img">
+                                            <img class="img-fluid" src="./new-imgs/instructor1.svg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="font-weight-bold">أحمد محمد</h5>
+                                            <p>مدرب موشن جرافيك</p>
+                                            <div><strong class="mr-1">4.6</strong><img src="./new-imgs/star.png"
+                                                    alt="star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 d-flex justify-content-center">
+                                    <div class="instructor position-relative">
+                                        <div class="instructor-img">
+                                            <img class="img-fluid" src="./new-imgs/instructor4.svg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="font-weight-bold">أسامه علي</h5>
+                                            <p>مدرب تصميم مواقع</p>
+                                            <div><strong class="mr-1">4.3</strong><img src="./new-imgs/star.png"
+                                                    alt="star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 d-flex justify-content-center">
+                                    <div class="instructor position-relative">
+                                        <div class="instructor-img">
+                                            <img class="img-fluid" src="./new-imgs/instructor3.svg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="font-weight-bold">حسين احمد</h5>
+                                            <p>مدرب تطوير مواقع</p>
+                                            <div><strong class="mr-1">5.0</strong><img src="./new-imgs/star.png"
+                                                    alt="star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 d-flex justify-content-center">
+                                    <div class="instructor position-relative">
+                                        <div class="instructor-img">
+                                            <img class="img-fluid" src="./new-imgs/instructor1.svg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5 class="font-weight-bold">إبراهيم خالد</h5>
+                                            <p>مدرب تصميم واجهات</p>
+                                            <div><strong class="mr-1">4.8</strong><img src="./new-imgs/star.png"
+                                                    alt="star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="features text-center">
+            <div class="container position-relative">
+                <img class="arrow up-arrow" src="./new-imgs/features-up-arrow.svg" alt="arrow">
+                <img class="arrow down-arrow" src="./new-imgs/features-down-arrow.svg" alt="arrow">
+                <div class="one-feature mr-auto ml-auto ">
+                    <div class="text-center ">
+                        <h2 class="h1">أسلوب يساعد على إيصال المعلومة</h2>
+                        <p>شرح تطبيقي يساعدك على وصول المعلومة بطريقة مضمونة</p>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="img">
+                        <img class="img-fluid" src="./new-imgs/feature1.svg" alt="feature">
+                    </div>
+                </div>
+                <div class="one-feature ">
+                    <div class="text-center">
+                        <h2 class="h1">برامج تدريبية متنوعة تساهم<br />
+                            في رفع مسيرتك المهنية</h2>
+                        <p>برامج تدريبية تساعدك في رفع مسيرتك المهنية للحصول على نتائج تحقق اهدافك</p>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="img">
+                        <img class="img-fluid" src="./new-imgs/feature2.svg" alt="feature">
+                    </div>
+                </div>
+                <div class="one-feature ">
+                    <div class="text-center">
+                        <h2 class="h1">تعليم بنتائج فعالة<br />
+                            في رفع مسيرتك المهنية</h2>
+                        <p>التدريب القائم على المشاريع والتقييمات القوية والممارسة عليها <br />
+                            هو الاسلوب المتبع لتحقيق أفضل النتائج لعملائنا</p>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="img">
+                        <img class="img-fluid" src="./new-imgs/feature3.svg" alt="feature">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="departments">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4">
+                        <div class="item d-flex justify-content-between align-items-center">
+                            <div class="wrapper">
+                                <h4 class="font-weight-bold">للاطفال</h4>
+                                <p>ابني لطفلك مستقبلا زاهراً من خلال تدريب سهل يمنح لطفلك الفائدة
+                                    والمتعة، ويكتسب مهارات جديدة مساعده لبناء مستقبله</p>
+                                <a href="#" class="btn"><img src="./new-imgs/fi-rr-arrow-left.svg" alt="arrow"></a>
+                            </div>
+                            <div class="img">
+                                <img src="./new-imgs/BoyModel.svg" alt="boy" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6  mb-4">
+                        <div class="item d-flex justify-content-between align-items-center">
+                            <div class="wrapper">
+                                <h4 class="font-weight-bold">قطاع الأعمال</h4>
+                                <p>انقل فريقك لمستوى آخر من الابداع من خلال برامج تدريبية متخصصة يحتاج إليها فريقك
+                                    للتميز
+                                    في أسواق العمل المحلية والعالمية</p>
+                                <a href="#" class="btn orange"><img src="./new-imgs/fi-rr-arrow-left.svg" alt=""></a>
+                            </div>
+                            <div class="img">
+                                <img src="./new-imgs/ManModel.svg" alt="boy" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testemonials">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="h1">اراء المتدربين</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 col-lg-3 justify-content-center">
+                        <div class="trainees d-flex align-items-center justify-content-center">
+                            <div class="height">
+                                <div class="img active" data-testem-number="1">
+                                    <img class="img-fluid" src="./new-imgs/trainee1.svg" alt="trainee">
+                                </div>
+                                <div class="img" data-testem-number="2">
+                                    <img class="img-fluid" src="./new-imgs/trainee2.svg" alt="trainee">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img" data-testem-number="3">
+                                    <img class="img-fluid" src="./new-imgs/trainee3.svg" alt="trainee">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex align-items-center">
+                        <div class="testems">
+                            <div class="one-testem active" id="1">
+                                <div class="wrapper">
+                                    <div>
+                                        <h6 class="font-weight-bold">أحمد مصطفي</h6>
+                                        <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                            الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام</p>
+
+                                    </div>
+                                    <div class="img">
+                                        <img class="img-fluid" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="one-testem" id="2">
+                                <div class="wrapper">
+                                    <div>
+                                        <h6 class="font-weight-bold">أحمد مصطفي</h6>
+                                        <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                            الموجودة في اللغة العربية بدلا من أو عوضاً عن استخداميتم استخدام نص لوريم
+                                            إيبسوم
+                                            لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                            الموجودة في اللغة العربية بدلا من أو عوضاً عن استخداميتم استخدام نص لوريم
+                                            إيبسوم
+                                    </div>
+                                    <div class="img">
+                                        <img class="img-fluid" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="one-testem" id="3">
+                                <div class="wrapper">
+                                    <div>
+                                        <h6 class="font-weight-bold">أحمد مصطفي</h6>
+                                        <p>3</p>
+
+                                    </div>
+                                    <div class="img">
+                                        <img class="img-fluid" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="one-testem" id="4">
+                                <div class="wrapper">
+                                    <div>
+                                        <h6 class="font-weight-bold">أحمد مصطفي</h6>
+                                        <p>4</p>
+
+                                    </div>
+                                    <div class="img">
+                                        <img class="img-fluid" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-testem" id="5">
+                                <div class="wrapper">
+                                    <div>
+                                        <h6 class="font-weight-bold">أحمد مصطفي</h6>
+                                        <p>5</p>
+
+                                    </div>
+                                    <div class="img">
+                                        <img class="img-fluid" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-testem" id="6">
+                                <div class="wrapper">
+                                    <div>
+                                        <h6 class="font-weight-bold">أحمد مصطفي</h6>
+                                        <p>6</p>
+
+                                    </div>
+                                    <div class="img">
+                                        <img class="img-fluid" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex justify-content-center mt-5 mt-lg-0">
+                        <div class="trainees d-flex align-items-center justify-content-center">
+                            <div>
+                                <div class="img" data-testem-number="4">
+                                    <img class="img-fluid" src="./new-imgs/trainee3.svg" alt="trainee">
+                                </div>
+                            </div>
+                            <div class="height">
+                                <div class="img" data-testem-number="5">
+                                    <img class="img-fluid" src="./new-imgs/trainee1.svg" alt="trainee">
+                                </div>
+                                <div class="img" data-testem-number="6">
+                                    <img class="img-fluid" src="./new-imgs/trainee2.svg" alt="trainee">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help mb-5">
+            <div class="container">
+                <div class="row justify-content-center text-center text-md-left">
+                    <div class="col-12 col-md-6 d-block d-md-flex align-items-center order-1 order-md-0">
+                        <div class="wrapper">
+                            <h2>للمساعده</h2>
+                            <p>نحن نعمل علي مساعدتك دائماً في أي وقت والإجابة علي إستفساراتكم</p>
+                            <a href="#" class="btn help-btn"><img src="./new-imgs/fi-rr-arrow-left.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-4 mb-md-0">
+                        <div class="wrapper">
+                            <img src="./new-imgs/help-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+            integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                //============================================
+                //  sliding through the carousel
+                //============================================
+                function adjustCarouselHeight() {
+                    $('.dev-skills .carousel .fade-carousel').css({
+                        minHeight: $('.dev-skills .carousel .fade-carousel .fade-item > .row').height()
+                    })
+                }
+                adjustCarouselHeight();
+
+                $('.carousel .links li').on('click', function () {
+                    var fadeIndex = $(this).attr('data-slide-to');
+
+                    //fade in the clicked item & fade out the current one
+                    if (!$(this).hasClass('active') && $('.dev-skills .carousel .fade-item').eq(fadeIndex).is(":hidden")) {
+                        $('.dev-skills .carousel .fade-item.active').fadeOut(function () {
+                            $(this).removeClass("active")
+                            $('.dev-skills .carousel .fade-item').eq(fadeIndex).fadeIn().addClass("active").siblings().removeClass("active").hide();
+                        }, 0)
+                    }
+
+                    //changeng links active state
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
+
+
+                //sliding the line under links
+                let tabs = $('.carousel .links ul li');
+                function slideToActive() {
+                    let slidingLine = $('.carousel .links .sliding-line'),
+                        activeTab = $('.carousel .links ul li.active'),
+                        pos = $(activeTab).position().left;
+
+                    slidingLine.width($(activeTab).width());
+                    slidingLine.css("left", pos + parseInt($(activeTab).css("margin-left")) + "px");
+                }
+                slideToActive();
+
+                $(window).on("resize", function () {
+                    slideToActive();
+                    adjustCarouselHeight();
+                });
+                $(tabs).on("click", function () {
+                    slideToActive();
+                });
+
+
+                //============================================
+                //  start testemonials
+                //============================================
+                let trainees = $(".testemonials .trainees .img"),
+                    activeTrainee = $(".testemonials .trainees .img.active");
+
+
+
+                $(trainees).on("click", function () {
+
+                    activeTrainee = $(".testemonials .trainees .img.active");
+
+                    let activeTestem = $(".testemonials .testems .one-testem.active"),
+                        testemId = `#${$(this).data("testem-number")}`;
+
+                    if (!$(this).hasClass("active")) {
+                        $(activeTrainee).removeClass("active");
+                        $(this).addClass("active");
+
+                        $(activeTestem).fadeOut(function () {
+                            $(this).removeClass("active");
+                            $(testemId).fadeIn().addClass("active").siblings().removeClass("active").hide();
+                        });
+
+                    }
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

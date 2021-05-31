@@ -500,9 +500,6 @@
             }
 
             .certifications .carousel .fade-carousel .fade-item {
-                position: absolute;
-                top: 0;
-                left: 0;
                 height: 100%;
                 width: 100%;
             }
@@ -550,6 +547,7 @@
             .invest .text .wrapper .text span {
                 color: #42B39A;
                 font-size: 24px;
+                margin-left: 10px;
             }
 
             .invest .text .wrapper span strong {
@@ -1195,7 +1193,7 @@
                         <div class="wrapper w-100 ">
                             <div class="text ">
                                 <h3 class="mb-3 font-weight-bold">استثمر في نفسك</h3>
-                                <span class="mr-5 "><strong>1850</strong>ريال سعودي</span>
+                                <span><strong>1850</strong>ريال سعودي</span>
                                 <span><strong>495</strong>دولار</span>
                             </div>
                             <div class=" mt-4 d-inline-flex justify-content-around buttons ">
@@ -1295,18 +1293,24 @@
                 //============================================
                 //  sliding through the carousel
                 //============================================
-                function adjustCarouselHeight() {
-                    $('.certifications .carousel .fade-carousel').css({
-                        minHeight: $('.certifications .carousel .fade-carousel .fade-item > .row').height()
-                    })
+                function throttle(callback, limit) {
+                    var wait = false;                  // Initially, we're not waiting
+                    return function () {               // We return a throttled function
+                        if (!wait) {                   // If we're not waiting
+                            callback.call();           // Execute users function
+                            wait = true;               // Prevent future invocations
+                            setTimeout(function () {   // After a period of time
+                                wait = false;          // And allow future invocations
+                            }, limit);
+                        }
+                    }
                 }
-                adjustCarouselHeight();
 
                 $('.carousel .links li').on('click', function () {
                     var fadeIndex = $(this).attr('data-slide-to');
 
                     //fade in the clicked item & fade out the current one
-                    if (!$(this).hasClass('active')) {
+                    if (!$(this).hasClass('active') && $('.certifications .carousel .fade-item').eq(fadeIndex).is(":hidden")) {
                         $('.certifications .carousel .fade-item.active').fadeOut(function () {
                             $(this).removeClass("active")
                             $('.certifications .carousel .fade-item').eq(fadeIndex).fadeIn().addClass("active").siblings().removeClass("active").hide();
@@ -1332,7 +1336,6 @@
 
                 $(window).on("resize", function () {
                     slideToActive();
-                    adjustCarouselHeight();
                 });
                 $(tabs).on("click", function () {
                     slideToActive();
