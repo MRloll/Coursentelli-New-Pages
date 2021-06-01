@@ -183,6 +183,12 @@
                 font-size: 15px;
             }
 
+            @media (max-width: 575px) {
+                .advantages .item {
+                    padding: 30px;
+                }
+            }
+
             /* start dev-skills   */
             .dev-skills .carousel .links {
                 box-shadow: none;
@@ -335,7 +341,10 @@
 
             /* start features */
             .features .one-feature {
-                margin-bottom: 100px;
+                margin-bottom: 66px;
+                flex-wrap: wrap;
+                display: flex;
+                margin-top: 100px;
             }
 
             .features .arrow {
@@ -343,8 +352,17 @@
                 display: none;
             }
 
+            .features .one-feature>div {
+                flex-basis: 100%;
+            }
+
 
             @media (min-width: 991px) {
+                .features .one-feature {
+                    margin-top: 0;
+                    display: block;
+                    margin-bottom: 100px;
+                }
 
                 .features .one-feature:nth-of-type(2) {
                     margin-left: 586px;
@@ -427,6 +445,11 @@
                 border-radius: 6px;
                 cursor: pointer;
                 height: 100%;
+                transition: border-color 1s ease;
+            }
+
+            .departments .item:hover {
+                border-color: #2b77b2;
             }
 
             .departments .kids .item {
@@ -435,7 +458,6 @@
 
             .departments .item .wrapper {
                 padding: 30px;
-
             }
 
             .departments .item a.orange {
@@ -451,6 +473,7 @@
                 align-items: center;
                 justify-content: center;
             }
+
 
             /* start testemonials */
             .testemonials .circle {
@@ -484,6 +507,7 @@
                 border-radius: 50%;
                 width: 110px;
                 height: 110px;
+                box-shadow: 0px 0px 0px 6px #e3e9f0;
             }
 
             .testemonials .testems {
@@ -513,9 +537,22 @@
                 min-width: 80px;
             }
 
+            @media (max-width: 575px) {
+                .testemonials .testems .one-testem .img {
+                    min-width: 40px;
+                }
+            }
+
             @media (max-width: 991px) {
                 .testemonials .circle {
                     bottom: -30%;
+                }
+            }
+
+            @media (max-width: 1199px) {
+                .testemonials .trainees .img img {
+                    width: 86px;
+                    height: 86px;
                 }
             }
 
@@ -563,7 +600,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
                         <div class="item">
                             <div>
                                 <div class="img">
@@ -573,7 +610,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
                         <div class="item">
                             <div>
                                 <div class="img">
@@ -583,7 +620,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
                         <div class="item">
                             <div>
                                 <div class="img">
@@ -593,7 +630,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
                         <div class="item">
                             <div>
                                 <div class="img">
@@ -816,35 +853,35 @@
                 <img class="arrow up-arrow" src="./new-imgs/features-up-arrow.svg" alt="arrow">
                 <img class="arrow down-arrow" src="./new-imgs/features-down-arrow.svg" alt="arrow">
                 <div class="one-feature mr-auto ml-auto ">
-                    <div class="text-center ">
+                    <div class="text-center order-1">
                         <h2 class="h1">أسلوب يساعد على إيصال المعلومة</h2>
                         <p>شرح تطبيقي يساعدك على وصول المعلومة بطريقة مضمونة</p>
                         <div class="divider"></div>
                     </div>
-                    <div class="img">
+                    <div class="img mb-3 mb-lg-0">
                         <img class="img-fluid" src="./new-imgs/feature1.svg" alt="feature">
                     </div>
                 </div>
                 <div class="one-feature ">
-                    <div class="text-center">
+                    <div class="text-center  order-1">
                         <h2 class="h1">برامج تدريبية متنوعة تساهم<br />
                             في رفع مسيرتك المهنية</h2>
                         <p>برامج تدريبية تساعدك في رفع مسيرتك المهنية للحصول على نتائج تحقق اهدافك</p>
                         <div class="divider"></div>
                     </div>
-                    <div class="img">
+                    <div class="img  mb-3 mb-lg-0">
                         <img class="img-fluid" src="./new-imgs/feature2.svg" alt="feature">
                     </div>
                 </div>
                 <div class="one-feature ">
-                    <div class="text-center">
+                    <div class="text-center  order-1">
                         <h2 class="h1">تعليم بنتائج فعالة<br />
                             في رفع مسيرتك المهنية</h2>
                         <p>التدريب القائم على المشاريع والتقييمات القوية والممارسة عليها <br />
                             هو الاسلوب المتبع لتحقيق أفضل النتائج لعملائنا</p>
                         <div class="divider"></div>
                     </div>
-                    <div class="img">
+                    <div class="img mb-3 mb-lg-0">
                         <img class="img-fluid" src="./new-imgs/feature3.svg" alt="feature">
                     </div>
                 </div>
