@@ -196,6 +196,10 @@
                 .advantages .item {
                     padding: 30px;
                 }
+
+                .advantages .item .img img {
+                    width: 73px;
+                }
             }
 
             /* start dev-skills   */
@@ -263,7 +267,7 @@
             }
 
             .dev-skills .carousel .fade-carousel .fade-item:not(.instructors) img {
-                width: 50%;
+                width: 80%;
             }
 
             .dev-skills .carousel .fade-item:not(.active) {
@@ -282,7 +286,7 @@
                 padding: 12px;
                 font-size: 13px;
                 border-radius: 6px;
-                box-shadow: 0px 7px 17px -12px rgb(0 0 0 / 8%);
+                box-shadow: 0px 7px 17px -12px rgba(17, 36, 89, 0.4);
             }
 
             .dev-skills .carousel .fade-item .instructor .desc p {
@@ -349,6 +353,10 @@
             }
 
             /* start features */
+            .features {
+                background: rgba(17, 36, 89, 0.02);
+            }
+
             .features .one-feature {
                 margin-bottom: 66px;
                 flex-wrap: wrap;
@@ -402,6 +410,14 @@
                     right: -67px;
                     width: 406px;
                 }
+
+                .features .slanted-arrow {
+                    bottom: -171px;
+                    left: 380px;
+                    transform: rotate(-16deg);
+                    width: 51%;
+                }
+
             }
 
             @media (min-width:1200px) {
@@ -423,6 +439,12 @@
                     right: -24px;
                     width: 430px;
                 }
+
+                .features .slanted-arrow {
+                    left: 463px;
+                    width: 47%;
+                }
+
             }
 
 
@@ -442,6 +464,11 @@
                     right: -24px;
                     width: 430px;
                 }
+
+                .features .slanted-arrow {
+                    left: 434px;
+                }
+
             }
 
             /* start departments */
@@ -456,9 +483,9 @@
                 height: 100%;
                 transition: border-color 1s ease;
             }
-            
-      
-            
+
+
+
             .departments .item:hover {
                 border-color: #2b77b2;
             }
@@ -466,7 +493,7 @@
             .departments .kids .item {
                 background: #D6F1F9;
             }
-            
+
             .departments .buisness .item {
                 background: #f0f2f3;
             }
@@ -491,11 +518,19 @@
 
 
             /* start testemonials */
+            .testemonials .testems {
+                border: 1px solid #e3e2e2;
+                padding: 20px;
+                border-radius: 6px;
+                box-shadow: 0px 0px 41px -27px #112459;
+            }
+
             .testemonials .circle {
                 position: absolute;
-                bottom: -87%;
+                bottom: -17%;
                 z-index: -1;
-                right: -405px;
+                right: -79px;
+                width: 71%;
             }
 
             .testemonials .trainees .height {
@@ -504,15 +539,20 @@
             }
 
             .testemonials .trainees .img {
-                margin: 0 0 75px 20px;
+
                 cursor: pointer;
                 opacity: 30%;
                 transition: opacity 1s ease;
             }
 
-            .testemonials .trainees:last-of-type .img {
+            .testemonials .row>div:first-of-type .img {
+                margin: 0 0 75px 20px;
+            }
+
+            .testemonials .row>div:last-of-type .img {
                 margin: 0 20px 75px 0;
             }
+
 
             .testemonials .trainees .img.active {
                 opacity: 100%;
@@ -543,6 +583,11 @@
                 justify-content: space-between;
             }
 
+            .testemonials .testems .one-testem .wrapper>div:first-of-type {
+                flex-grow: 1;
+            }
+
+
             .testemonials .testems .one-testem .wrapper h6 {
                 color: #42B39A;
             }
@@ -552,15 +597,30 @@
                 min-width: 80px;
             }
 
-            @media (max-width: 575px) {
-                .testemonials .testems .one-testem .img {
-                    min-width: 40px;
+            @media (min-width: 768px) {
+                .testemonials .circle {
+                    bottom: -21%;
+                    right: -269px;
+                }
+
+                .testemonials .circle {
+                    bottom: -35%;
+                    width: 54%;
                 }
             }
 
-            @media (max-width: 991px) {
+            @media (min-width: 1200px) {
                 .testemonials .circle {
-                    bottom: -30%;
+                    bottom: -37%;
+                    width: 35%;
+                }
+
+            }
+
+            @media (max-width: 575px) {
+
+                .testemonials .testems .one-testem .img {
+                    max-width: 40px;
                 }
             }
 
@@ -574,7 +634,7 @@
             /* start help */
             .help {
                 margin-top: 150px;
-                margin-bottom: 171px;
+                margin-bottom: 51px;
             }
         </style>
     </head>
@@ -867,6 +927,7 @@
             <div class="container position-relative">
                 <img class="arrow up-arrow" src="./new-imgs/features-up-arrow.svg" alt="arrow">
                 <img class="arrow down-arrow" src="./new-imgs/features-down-arrow.svg" alt="arrow">
+                <img class="arrow slanted-arrow" src="./new-imgs/features-slanted-arrow.svg" alt="arrow">
                 <div class="one-feature mr-auto ml-auto ">
                     <div class="text-center order-1">
                         <h2 class="h1">أسلوب يساعد على إيصال المعلومة</h2>
@@ -1049,7 +1110,7 @@
                     <div class="col-12 col-lg-3 d-flex justify-content-center mt-5 mt-lg-0">
                         <div class="trainees d-flex align-items-center justify-content-center">
                             <div>
-                                <div class="img" data-testem-number="4">
+                                <div class="img " data-testem-number="4">
                                     <img class="img-fluid" src="./new-imgs/trainee3.svg" alt="trainee">
                                 </div>
                             </div>
