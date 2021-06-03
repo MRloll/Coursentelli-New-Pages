@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="Ar" dir="rtl">
+
+    <head>
+        <meta name="google-site-verification" content="ccWBwCgrIbn9F0nyC3VV7LAoYb1UrampKUyDVmVcA2A" />
+        <!-- Required meta tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>كورسنتلى</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+            integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+        <!-- <link rel="stylesheet" href="css/main.css" /> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        <style>
+            * {
+                font-family: 'Cairo', sans-serif;
+            }
+
+            @media (min-width: 1400px) {
+                .container {
+                    max-width: 1320px;
+                }
+            }
+
+            html,
+            body {
+                position: relative;
+                overflow-x: hidden;
+            }
+
+            .top-elipse {
+                position: absolute;
+                top: -221px;
+                left: -43%;
+                z-index: -1;
+                opacity: 0.08;
+            }
+
+            .right-elipse {
+                top: 338px;
+                left: auto;
+                right: -63%;
+            }
+
+
+            section {
+                margin-top: 70px;
+                color: #112459;
+            }
+
+            h1,
+            .h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            p.lead {
+                font-size: 16px;
+            }
+
+            .divider {
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                border: 1px solid #fc8e0b;
+                border-radius: 50%;
+                position: relative;
+                margin: auto;
+            }
+
+            .divider::before,
+            .divider::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 50px;
+                width: 180px;
+                height: 2px;
+                background: #42b39a;
+            }
+
+            .divider::before {
+                right: 50px;
+            }
+
+            .vertical-divider {
+                width: 1px;
+                margin: 0 10px;
+                opacity: 50%;
+                background-color: rgba(17, 36, 89, 0.3);
+            }
+
+            @media (min-width:576px) {
+                .top-elipse {
+                    left: -9%;
+                }
+
+                .right-elipse {
+                    right: -13%;
+                }
+            }
+
+            @media (max-width: 575px) {
+
+                .divider::before,
+                .divider::after {
+                    width: 100px;
+                }
+            }
+
+
+            /* start introduction */
+            .intro {
+                background: url(./new-imgs/intro-background.svg) no-repeat;
+                background-size: cover;
+                margin-top: 0;
+            }
+
+            .intro .row {
+                height: 100vh;
+            }
+
+            .video .buttons a,
+            .intro a {
+                border-radius: 6px;
+                background: #42B39A;
+                padding: 10px 94px;
+                display: inline-block;
+                color: white;
+                margin-top: 20px;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            /* start features */
+
+            .features .item>div {
+                padding: 72px 0;
+                height: 297px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .features div[class^="col-"]:first-of-type .item>div {
+                background: rgba(254, 98, 59, 0.16);
+                border-bottom-right-radius: 80px;
+            }
+
+            .features div[class^="col-"]:nth-child(2) .item>div {
+                background: rgba(255, 183, 49, 0.16);
+                border-bottom-right-radius: 80px;
+            }
+
+            .features div[class^="col-"]:nth-child(3) .item>div {
+                background: rgba(37, 203, 248, 0.16);
+                border-bottom-left-radius: 80px;
+            }
+
+            .features div[class^="col-"]:last-of-type .item>div {
+                background: rgba(149, 88, 202, 0.16);
+                border-bottom-left-radius: 80px;
+            }
+
+            @media (max-width: 575px) {
+                .features .item>div {
+                    height: 250px;
+                }
+
+                .features .item .img img {
+                    width: 73px;
+                }
+            }
+
+            /* start video */
+            .video-intro .video-player {
+                height: 580px;
+                max-width: 1044px;
+            }
+
+            @media (max-width:776px) {
+                .video-intro .video-player {
+                    height: 400px;
+                    max-width: 650px;
+                }
+            }
+
+            /* start video */
+            .video h1,
+            .video h6 {
+                font-weight: bold;
+            }
+
+            .video .details h6 {
+                margin: 10px 0;
+            }
+
+            .video .video-rating .streaming {
+                background: #FB2F2F;
+                border-radius: 6px;
+                padding: 7px 0;
+                color: white;
+                width: 127px;
+                text-align: center;
+            }
+
+            .video .video-rating .streaming span {
+                margin-left: 6px;
+            }
+
+            .video .buttons {
+                text-align: center;
+            }
+
+            .video .buttons a {
+                padding: 10px 0px;
+                width: 223px;
+                border: 1px solid #42B39A;
+            }
+
+            .video .buttons a:last-of-type {
+                background-color: transparent;
+                color: #42B39A;
+                margin-right: 20px;
+                transition: all 1s ease;
+            }
+
+            .video .buttons a:last-of-type:hover {
+                background-color: #112459;
+                color: white;
+                border-color: #112459;
+            }
+
+            @media (max-width:767px) {
+                .video .buttons a {
+                    display: block;
+                    width: 100%;
+                }
+
+                .video .buttons a:last-of-type {
+                    margin-right: 0;
+                    margin-top: 20px;
+                }
+
+                .video-rating {
+                    font-size: 12px;
+                }
+
+                .video-rating img {
+                    width: 20px;
+                }
+
+                .streaming {
+                    font-size: 9px;
+                    width: 90px;
+                }
+            }
+
+            @media (min-width: 768px) {}
+
+            @media (min-width: 992px) {
+                .video .buttons {
+                    position: absolute;
+                    bottom: 4px;
+                }
+
+                .video .buttons a {
+                    width: 180px;
+                }
+
+            }
+
+            @media (min-width: 1200px) {
+                .video .buttons a {
+                    width: 223px;
+                }
+
+            }
+
+
+            body {
+                height: 4000px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="intro">
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-7 col-xl-8">
+                        <div class="img">
+                            <img class="img-fluid" src="./new-imgs/kids-intro.svg" alt="kids">
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-end text-center">
+                        <div class="text">
+                            <h2>
+                                كورسنتلي أطفال
+                            </h2>
+                            <p>
+                                اصنع لطفلك رحلة المستقبل
+                            </p>
+                            <a href="#">اكتشف الان <img class="ml-3" src="./new-imgs/fi-rr-arrow-left.svg"
+                                    alt="arrow-left"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/skill.svg" alt="skill">
+                                </div>
+                            </div>
+                            <h6 class="mt-4">فصول مباشرة</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/be-ready.svg" alt="ready">
+                                </div>
+                            </div>
+                            <h6 class="mt-4">تقارير دورية</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/certificate.svg" alt="certificate">
+                                </div>
+                            </div>
+                            <h6 class="mt-4">منهج مرح للتعلم</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="./new-imgs/united.svg" alt="united">
+                                </div>
+                            </div>
+                            <h6 class="mt-4">دروس مسجلة</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="video-intro pt-5">
+            <div class="container">
+                <div class="video-player text-center m-auto">
+                    <iframe style="border-radius: 12px; height: 100%; width: 100%;"
+                        src="https://www.youtube.com/embed/o4X7F8-ZHuk?start=26" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="video  pt-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="h1">برامجنا</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-1 order-lg-0  mt-2 mt-lg-0">
+                        <div class="heading d-none d-lg-flex justify-content-between">
+                            <div>
+                                <h1>دبلوم احتراف الموشن جرافيك <br /> Professional Diploma of Motion Graphics</h1>
+                            </div>
+                        </div>
+                        <div class="video-rating d-none d-lg-flex align-items-center">
+                            <img src="./new-imgs/fi-sr-calendar.svg" alt="calender">
+                            <strong class="ml-2 mr-4 ">العمر 10 - 7</strong>
+                            <strong>4.5</strong>
+                            <img class="mx-2" src="./new-imgs/star.png" alt="start">
+                            <small>(255تقييم)</small>
+                            <div class="streaming ml-3">
+                                <span>بث مباشر</span>
+                                <img src="./new-imgs/streaming.png" alt="steaming">
+                            </div>
+                        </div>
+                        <p class="d-none d-lg-block mt-4">
+                            يهدف دبلوم احتراف الموشن جرافيك الى اعداد مصممين ذو كفاءة وخبرة تساعدهم في رفع مستواهم
+                            المهني
+                            واكتساب مهارات جديدة تؤهلهم لسوق العمل بدلا من دراسة الدورات المتجزئة سوف تدرس منهج متكامل
+                            منظم
+                            ومتقن يحتوي على جميع المعلومات والأسرار التي تجعلك قادراَ على تصميم و بناء وتحريك المشاهد و
+                            رسم
+                            الشخصيات الكرتونية بالإضافة الى تطبيق عملي لعدد من المشاريع و التصميمات المختلفة
+                        </p>
+                        <div class="buttons">
+                            <a href="#">اكتشف الدورة التجريبية</a>
+                            <a href="#">التسجبل الان</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="heading d-flex d-lg-none justify-content-between">
+                            <div>
+                                <h1>دبلوم احتراف الموشن جرافيك <br /> Professional Diploma of Motion Graphics</h1>
+                            </div>
+                        </div>
+                        <div class="video-rating  d-flex d-lg-none align-items-center  mb-3 mb-lg-0">
+                            <img src="./new-imgs/fi-sr-calendar.svg" alt="calender">
+                            <small class="ml-2 mr-4">العمر 10 - 7</small>
+                            <strong>4.5</strong>
+                            <img class="mx-2" src="./new-imgs/star.png" alt="start">
+                            <small>(255تقييم)</small>
+                            <div class="streaming ml-3">
+                                <span>بث مباشر</span>
+                                <img src="./new-imgs/streaming.png" alt="steaming">
+                            </div>
+                        </div>
+                        <div class="video-player">
+                            <iframe style="border-radius: 12px; height: 421px; width: 100%;"
+                                src="https://www.youtube.com/embed/o4X7F8-ZHuk?start=26" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <p class="d-block d-lg-none mt-3 text-center text-lg-left">
+                            يهدف دبلوم احتراف الموشن جرافيك الى اعداد مصممين ذو كفاءة وخبرة تساعدهم في رفع مستواهم
+                            المهني
+                            واكتساب مهارات جديدة تؤهلهم لسوق العمل بدلا من دراسة الدورات المتجزئة سوف تدرس منهج متكامل
+                            منظم
+                            ومتقن يحتوي على جميع المعلومات والأسرار التي تجعلك قادراَ على تصميم و بناء وتحريك المشاهد و
+                            رسم
+                            الشخصيات الكرتونية بالإضافة الى تطبيق عملي لعدد من المشاريع و التصميمات المختلفة
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+</html>
