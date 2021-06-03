@@ -283,12 +283,145 @@
                 .video .buttons a {
                     width: 223px;
                 }
+            }
+
+            /* start kids */
+            .kids {
+                margin-top: 200px;
+                position: relative;
+            }
+
+            .kids .arrow {
+                display: none;
+            }
+
+            .kids.row-1 {
+                background: url(./new-imgs/row-1-bg.svg) no-repeat;
+                background-size: contain;
+            }
+
+            .kids.row-2 {
+                background: url(./new-imgs/row-2-bg.svg) no-repeat;
+                background-size: contain;
+            }
+
+            .kids.row-3 {
+                background: url(./new-imgs/row-3-bg.svg) no-repeat;
+                background-size: contain;
+            }
+
+            .kids .row .img-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .kids .row .img-wrapper.img-right {
+                justify-content: center;
+            }
+
+            .kids .row .img-wrapper .img img {
+                width: 541px;
+                height: 397px;
+            }
+
+            .kids .wrapper {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                line-height: 1.8;
+            }
+
+            .kids .wrapper h2 {
+                font-weight: bold;
+            }
+
+            .kids .qoute {
+                margin-top: -154px;
+                margin-right: 30px;
+            }
+
+            .kids .kids.row-1 {
+                background-position-x: 0%;
+            }
+
+            .kids.row-2 {
+                background-position-x: 100%;
+            }
+
+            .kids.row-3 {
+                background-position-x: 0%;
+            }
+
+            @media (max-width: 576px) {
+                .kids {
+                    background-position-y: 18% !important;
+                    margin-top: 50px;
+                }
+
+                .kids .qoute {
+                    width: 49px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .kids .arrow {
+                    display: block;
+                }
+
+                .kids .row .img-wrapper {
+                    justify-content: flex-end;
+                }
+
+                .kids .row .img-wrapper.img-right {
+                    justify-content: start;
+                }
 
             }
 
+            @media (min-width: 768px) {
+                .kids .kids-arrow-left {
+                    bottom: -69%;
+                    right: 107px;
+                    height: 397px;
+                }
 
-            body {
-                height: 4000px;
+                .kids .kids-arrow-right {
+                    bottom: -69%;
+                    left: 87px;
+                    height: 349px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .kids .kids-arrow-left {
+                    right: 187px;
+                }
+
+                .kids .kids-arrow-right {
+                    left: 203px;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .kids .kids-arrow-left {
+                    right: 352px;
+                    height: 397px;
+                    bottom: -76%;
+                }
+
+                .kids .kids-arrow-right {
+                    right: 219px;
+                    height: 404px;
+                    bottom: -70%;
+                }
+            }
+
+            @media (min-width: 1600px) {
+                .kids .kids-arrow-right {
+                    right: 457px;
+                }
             }
         </style>
     </head>
@@ -400,14 +533,15 @@
                             </div>
                         </div>
                         <p class="d-none d-lg-block mt-4">
-                            يهدف دبلوم احتراف الموشن جرافيك الى اعداد مصممين ذو كفاءة وخبرة تساعدهم في رفع مستواهم
-                            المهني
-                            واكتساب مهارات جديدة تؤهلهم لسوق العمل بدلا من دراسة الدورات المتجزئة سوف تدرس منهج متكامل
-                            منظم
-                            ومتقن يحتوي على جميع المعلومات والأسرار التي تجعلك قادراَ على تصميم و بناء وتحريك المشاهد و
-                            رسم
-                            الشخصيات الكرتونية بالإضافة الى تطبيق عملي لعدد من المشاريع و التصميمات المختلفة
-                        </p>
+                            هل تساءلت يوما كيف يتم عمل فيديوهات الموشن جرافيك او الانفو جرافيك؟؟ اذا كنت ترغب في تعلمه
+                            فهذا الكورس
+                            ستتعلم كيفية التخطيط لفكرة فيديو الموشن جرافيك وما هي مراحل الانتاج للفيديو وما الذي يمكن
+                            القايم به في كل مرحلة - وكيف
+                            تقوم بعصف ذهني لكي يوافق العمل الوقت المطلوب له والتسليم في الوقت المحدد ، ونتعلم كذلك كتابة
+                            الاسكريبت وكذلك رسم
+                            الاستوري بورد للفيديو - كما ايضا - سندرس بعض المهارات في برنامج ادوبي اليستريتور وكيفي تجهيز
+                            ملفات الافتر ايفيكتس عليه
+                            وبعد ذلك الانتقال الى برنامج الافتر ايفيكتس لتنفيذ الفيديو </p>
                         <div class="buttons">
                             <a href="#">اكتشف الدورة التجريبية</a>
                             <a href="#">التسجبل الان</a>
@@ -437,14 +571,107 @@
                                 allowfullscreen="allowfullscreen"></iframe>
                         </div>
                         <p class="d-block d-lg-none mt-3 text-center text-lg-left">
-                            يهدف دبلوم احتراف الموشن جرافيك الى اعداد مصممين ذو كفاءة وخبرة تساعدهم في رفع مستواهم
-                            المهني
-                            واكتساب مهارات جديدة تؤهلهم لسوق العمل بدلا من دراسة الدورات المتجزئة سوف تدرس منهج متكامل
-                            منظم
-                            ومتقن يحتوي على جميع المعلومات والأسرار التي تجعلك قادراَ على تصميم و بناء وتحريك المشاهد و
-                            رسم
-                            الشخصيات الكرتونية بالإضافة الى تطبيق عملي لعدد من المشاريع و التصميمات المختلفة
-                        </p>
+                            هل تساءلت يوما كيف يتم عمل فيديوهات الموشن جرافيك او الانفو جرافيك؟؟ اذا كنت ترغب في تعلمه
+                            فهذا الكورس
+                            ستتعلم كيفية التخطيط لفكرة فيديو الموشن جرافيك وما هي مراحل الانتاج للفيديو وما الذي يمكن
+                            القايم به في كل مرحلة - وكيف
+                            تقوم بعصف ذهني لكي يوافق العمل الوقت المطلوب له والتسليم في الوقت المحدد ، ونتعلم كذلك كتابة
+                            الاسكريبت وكذلك رسم
+                            الاستوري بورد للفيديو - كما ايضا - سندرس بعض المهارات في برنامج ادوبي اليستريتور وكيفي تجهيز
+                            ملفات الافتر ايفيكتس عليه
+                            وبعد ذلك الانتقال الى برنامج الافتر ايفيكتس لتنفيذ الفيديو </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kids row-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-1 order-lg-0">
+                        <div class="wrapper mb-5 mb-lg-0 text-center text-lg-left">
+                            <div class="text">
+                                <h2>جدول مناسب لطفلك</h2>
+                                <img class="mb-3" src="./new-imgs/underline.svg" alt="underline">
+                                <p>قمنا باختيار أوقات مرنة ومناسبة لطفلك يستطيع من خلالها حضور الفصول المباشرة كما
+                                    يمكنه مراجعتها من خلال الدروس المسجلة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6  img-wrapper">
+                        <div class="img">
+                            <img src="./new-imgs/row-1-kids.svg" alt="row1" class="img-fluid">
+                        </div>
+                    </div>
+                    <img class="arrow kids-arrow-left position-absolute" src="./new-imgs/kids-arrow-left.svg"
+                        alt="arrow">
+                </div>
+            </div>
+        </section>
+
+        <section class="kids row-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 img-wrapper img-right">
+                        <div class="img">
+                            <img src="./new-imgs/row-1-kids.svg" alt="row1" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="wrapper mb-5 mb-lg-0 text-center text-lg-left">
+                            <div class="text">
+                                <h2>اكتساب مهارات مستقبلية</h2>
+                                <img class="mb-3" src="./new-imgs/underline.svg" alt="underline">
+                                <p>سوف يتعلم طفلك من خلال منهج ممتع وتطبيقات يكتسب منها مهارات تساهم في
+                                    صناعة مستقبله</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="kids-arrow-right arrow position-absolute" src="./new-imgs/kids-arrow-right.svg"
+                        alt="arrow">
+                </div>
+            </div>
+        </section>
+
+        <section class="kids row-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-1 order-lg-0">
+                        <div class="wrapper mb-5 mb-lg-0 text-center text-lg-left">
+                            <div class="text">
+                                <h2>التوجيه والارشاد</h2>
+                                <img class="mb-3" src="./new-imgs/underline.svg" alt="underline">
+                                <p>من خلال تقارير دورية ستتمكن من متابعة رحلة طفلك ليكون ضمن مسار واضح يتقن ماتعلمه</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 img-wrapper">
+                        <div class="img">
+                            <img src="./new-imgs/row-3-kids.svg" alt="row1" class="img-fluid">
+                        </div>
+                    </div>
+                    <img class="kids-arrow-left arrow second position-absolute" src="./new-imgs/kids-arrow-left.svg"
+                        alt="arrow">
+                </div>
+            </div>
+        </section>
+
+        <section class="kids mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 img-wrapper img-right">
+                        <div class="img">
+                            <img src="./new-imgs/row-4-kids.svg" alt="row1" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="wrapper mb-5 mb-lg-0 text-center text-lg-left">
+                            <div class="text">
+                                <h2>نجاح طفلك يصنع المستقبل</h2>
+                                <img class="mb-3" src="./new-imgs/underline.svg" alt="underline">
+                            </div>
+                            <img class="qoute" src="./new-imgs/fi-rr-quote-yello.png" alt="qoute">
+                        </div>
                     </div>
                 </div>
             </div>
