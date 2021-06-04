@@ -123,15 +123,11 @@
                 margin-top: 0;
             }
 
-            .intro .row {
-                height: 100vh;
-            }
-
             .video .buttons a,
             .intro a {
                 border-radius: 6px;
                 background: #42B39A;
-                padding: 10px 94px;
+                padding: 10px 60px;
                 display: inline-block;
                 color: white;
                 margin-top: 20px;
@@ -139,6 +135,24 @@
 
             a:hover {
                 text-decoration: none;
+            }
+
+            .intro .intro-text .text {
+                width: 100%;
+                padding-top: 117px;
+            }
+
+            @media (min-width: 1200px) {
+                .intro .intro-img {
+                    height: 100%;
+                }
+
+                .intro .intro-text .text {
+                    width: auto;
+                    padding-top: 0;
+                }
+
+
             }
 
             /* start features */
@@ -429,16 +443,16 @@
     <body>
         <section class="intro">
             <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-7 col-xl-8">
-                        <div class="img">
+                <div class="row align-items-center justify-content-center justify-content-lg-between ">
+                    <div class="intro-img col-12 col-xl-9 order-1 order-xl-0">
+                        <div class="img h-100 d-flex align-items-end">
                             <img class="img-fluid" src="./new-imgs/kids-intro.svg" alt="kids">
                         </div>
                     </div>
                     <div
-                        class="col-12 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-end text-center">
+                        class="intro-text col-12 col-xl-3 d-flex justify-content-center justify-content-lg-end text-center ">
                         <div class="text">
-                            <h2>
+                            <h2 class="font-weight-bold">
                                 كورسنتلي أطفال
                             </h2>
                             <p>
@@ -458,7 +472,7 @@
                         <div class="item">
                             <div>
                                 <div class="img">
-                                    <img src="./new-imgs/skill.svg" alt="skill">
+                                    <img src="./new-imgs/presentation.svg" alt="presentation">
                                 </div>
                             </div>
                             <h6 class="mt-4">فصول مباشرة</h6>
@@ -468,7 +482,7 @@
                         <div class="item">
                             <div>
                                 <div class="img">
-                                    <img src="./new-imgs/be-ready.svg" alt="ready">
+                                    <img src="./new-imgs/report.svg" alt="report">
                                 </div>
                             </div>
                             <h6 class="mt-4">تقارير دورية</h6>
@@ -478,7 +492,7 @@
                         <div class="item">
                             <div>
                                 <div class="img">
-                                    <img src="./new-imgs/certificate.svg" alt="certificate">
+                                    <img src="./new-imgs/theatre.svg" alt="theatre">
                                 </div>
                             </div>
                             <h6 class="mt-4">منهج مرح للتعلم</h6>
@@ -488,7 +502,7 @@
                         <div class="item">
                             <div>
                                 <div class="img">
-                                    <img src="./new-imgs/united.svg" alt="united">
+                                    <img src="./new-imgs/facebook.svg" alt="facebook">
                                 </div>
                             </div>
                             <h6 class="mt-4">دروس مسجلة</h6>
@@ -614,7 +628,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 img-wrapper img-right">
                         <div class="img">
-                            <img src="./new-imgs/row-1-kids.svg" alt="row1" class="img-fluid">
+                            <img src="./new-imgs/row-2-kids.png" alt="row1" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -676,6 +690,25 @@
                 </div>
             </div>
         </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+            integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+
+                $(window).on("load resize", function () {
+                    $(".intro .row").height($(window).height())
+                    if ($(window).width() < 1200) {
+                        $(".intro .intro-img").height($(window).height() - $(".intro .intro-text").height())
+                    } else {
+                        $(".intro .intro-img").height("100%")
+                    }
+                });
+            });
+
+        </script>
 
     </body>
 
