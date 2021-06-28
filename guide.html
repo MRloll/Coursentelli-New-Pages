@@ -49,7 +49,7 @@
 
 
             section {
-                margin-top: 70px;
+                margin-top: 100px;
                 color: #112459;
             }
 
@@ -174,16 +174,50 @@
 
             .you-ready .arrow {
                 position: absolute;
-                display: none;
             }
+
+            .you-ready .additional-courses {
+                margin-top: 100px;
+            }
+
+            .you-ready .img img {
+                width: 100px;
+            }
+
+            .you-ready .text h6 {
+                font-size: 13px;
+            }
+
+            .you-ready .text a {
+                padding: 10px 22px;
+                font-size: 13px;
+            }
+
+            .you-ready .text a img {
+                width: 20px;
+            }
+
 
             @media (min-width: 768px) {
                 .you-ready .row .advanced-motion {
                     margin-top: 236px !important;
                 }
 
-                .you-ready .arrow {
-                    display: block;
+                .you-ready .img img {
+                    width: auto;
+                }
+
+                .you-ready .text a {
+                    padding: 10px 55px;
+                    font-size: unset;
+                }
+
+                .you-ready .text a img {
+                    width: auto;
+                }
+
+                .you-ready .text h6 {
+                    font-size: unset;
                 }
 
                 .you-ready .arrow.right-arrow {
@@ -198,14 +232,12 @@
                     top: 165px;
                     right: 449px;
                     transform: rotate(-16deg);
+                    width: auto;
                 }
             }
 
 
             @media (min-width: 992px) {
-                .you-ready .arrow {
-                    display: block;
-                }
 
                 .you-ready .arrow.right-arrow {
                     right: 293px;
@@ -222,9 +254,9 @@
 
             @media (min-width: 1200px) {
                 .you-ready .arrow.right-arrow {
-                    right: 363px;
+                    right: 383px;
                     width: 318px;
-                    top: 574px;
+                    top: 563px;
                 }
 
 
@@ -251,9 +283,9 @@
             @media (min-width: 1600px) {
                 .you-ready .arrow.right-arrow {
                     width: auto;
-                    top: 611px;
+                    top: 561px;
                     transform: rotate(0deg);
-                    right: 702px;
+                    right: 708px;
                 }
 
 
@@ -297,7 +329,7 @@
 
 
             .you-ready .computer {
-                top: 1004px;
+                top: 777px;
                 right: 53%;
             }
 
@@ -346,8 +378,8 @@
 
 
                 .you-ready .computer {
-                    top: 1244px;
-                    right: 46%;
+                    top: 1007px;
+                    right: 61%;
                 }
 
                 .you-ready .program {
@@ -364,6 +396,56 @@
                 }
 
             }
+
+
+            @media (max-width: 577px) {
+                .you-ready .additional-courses {
+                    margin-top: 0;
+                }
+
+                .you-ready .left-box {
+                    margin-right: 40%;
+                }
+
+                .you-ready .right-box {
+                    margin-left: 40%;
+                }
+
+                .you-ready .arrow.down-arrow {
+                    top: 14%;
+                    right: 60%;
+                    transform: rotate(-14deg);
+                    width: 108px;
+                }
+
+                .you-ready .arrow.reversed-down-arrow {
+                    top: 34%;
+                    right: 24%;
+                    transform: rotate(3deg);
+                    width: 123px;
+                }
+
+                .you-ready .arrow.down-arrow-second {
+                    top: 744px;
+                    right: 37%;
+                    transform: rotate(-14deg);
+                    width: 130px;
+                }
+
+                .you-ready .briefcase {
+                    right: 85%;
+                }
+
+                .you-ready .computer {
+                    top: 791px;
+                }
+
+                .you-ready .lamp {
+                    top: 40%;
+                }
+
+            }
+
 
             .you-ready .deco {
                 position: absolute;
@@ -439,24 +521,50 @@
                 width: 59px;
             }
 
+            .training-ways .carousel .links li h5 {
+                color: #959DB2;
+            }
+
             .training-ways .carousel .links li h5,
             .training-ways .carousel .links li svg path {
                 transition: all 1s ease;
             }
 
-            .training-ways .carousel .links li.active h5 {
-                color: #42B39A;
-            }
 
             .training-ways .carousel .links li.active svg path {
                 fill: white;
             }
 
 
-            .training-ways .carousel .links li.active>div {
+            .training-ways .carousel .links li.active.green>div {
                 background-color: #42B39A;
                 border-color: #42B39A;
             }
+
+            .training-ways .carousel .links li.active.green h5 {
+                color: #42B39A;
+            }
+
+
+            .training-ways .carousel .links li.active.blue>div {
+                background-color: #112459;
+                border-color: #112459;
+            }
+
+            .training-ways .carousel .links li.active.blue h5 {
+                color: #112459;
+            }
+
+
+            .training-ways .carousel .links li.active.orange>div {
+                background-color: #FC8E0B;
+                border-color: #FC8E0B;
+            }
+
+            .training-ways .carousel .links li.active.orange h5 {
+                color: #FC8E0B;
+            }
+
 
 
 
@@ -507,9 +615,18 @@
                 }
             }
 
+            /* start graphic desisn */
+            .graphic-design p {
+                font-size: 17px;
+            }
+
             /* start careers dvantages */
             .guide-advantages .row>div:first-of-type .img img {
                 width: 140px;
+            }
+
+            .guide-advantages p {
+                font-size: 20px;
             }
 
             @media (max-width: 768px) {
@@ -584,7 +701,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center advanced-motion-row  mt-md-5">
-                    <div class="col-12 col-md-4 order-1 order-md-0 advanced-motion">
+                    <div class="col-12 col-md-4 advanced-motion order-1 order-md-0 right-box">
                         <div class="img">
                             <img src="./guide-imgs/advanced-motion.svg" alt="mothion">
                         </div>
@@ -594,7 +711,7 @@
                                     alt="arrow-left"></a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 left-box">
                         <div class="img">
                             <img src="./guide-imgs/advanced-paint.svg" alt="mothion">
                         </div>
@@ -605,22 +722,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center ">
+                <div class="row justify-content-center additional-courses">
                     <div class="col-12 col-md-4">
-                        <h4 class="font-weight-bold">دورات اضافية</h4>
-                        <div class="divider mb-5"></div>
+                        <h5 class="font-weight-bold d-none d-sm-block">دورات اضافية</h5>
+                        <div class="divider mb-5 d-none d-sm-block"></div>
                         <div class="img">
                             <img src="./guide-imgs/character-design.svg" alt="character-design">
                         </div>
                         <div class="text mt-4">
                             <h6>رسم الشخصيات</h6>
+                            <h6 class="font-weight-bold d-block d-sm-none mt-4">دورات اضافية</h6>
                             <a href="#">أعرف المزيد<img class="ml-3" src="./guide-imgs/fi-rr-arrow-left.svg"
                                     alt="arrow-left"></a>
                         </div>
                     </div>
                 </div>
                 <img class="arrow down-arrow" src="./guide-imgs/down-arrow.svg" alt="arrow">
-                <img class="arrow right-arrow" src="./guide-imgs/right-arrow.svg" alt="arrow">
+                <img class="arrow down-arrow-second d-block d-md-none" src="./guide-imgs/down-arrow.svg" alt="arrow">
+                <img class="arrow reversed-down-arrow d-block d-md-none" src="./guide-imgs/reversed-down-arrow.png"
+                    alt="arrow">
+                <img class="arrow right-arrow d-none d-md-block" src="./guide-imgs/right-arrow.svg" alt="arrow">
             </div>
             <img src="./guide-imgs/circle.svg" alt="circle" class="top-circle circle">
             <img src="./guide-imgs/circle.svg" alt="circle" class="bottom-circle circle">
@@ -636,8 +757,8 @@
             <img src="./guide-imgs/program.svg" alt="elipse" class="deco program">
         </section>
 
-        <section class="training-ways text-center position-relative">
-            <img src="./guide-imgs/circle.svg" alt="circle" class="position-absolute circle">
+        <section class="training-ways text-center position-relative pt-5">
+            <img src="./guide-imgs/circle.svg" alt="circle" class="position-absolute circle d-none d-md-block">
             <div class=" text-center mb-5">
                 <h2 class="h1">الطرق الأمثل والاحدث لتدريبك</h2>
                 <div class="divider"></div>
@@ -646,7 +767,7 @@
                 <div class="carousel">
                     <div class="links d-block d-lg-flex text-center">
                         <ul class="d-flex justify-content-center  p-0">
-                            <li data-slide-to="0" class="active">
+                            <li data-slide-to="0" class="active green">
                                 <div class="mb-2">
                                     <svg id="live-streaming" xmlns="http://www.w3.org/2000/svg" width="144.257"
                                         height="107.744" viewBox="0 0 144.257 107.744">
@@ -683,7 +804,7 @@
                                 <h5>بث المباشر</h5>
 
                             </li>
-                            <li data-slide-to="1">
+                            <li data-slide-to="1" class="blue">
                                 <div class="mb-2">
                                     <svg id="video-files" xmlns="http://www.w3.org/2000/svg" width="125.718"
                                         height="125.718" viewBox="0 0 125.718 125.718">
@@ -737,7 +858,7 @@
                                 <h5>دورات مسجلة</h5>
 
                             </li>
-                            <li data-slide-to="2">
+                            <li data-slide-to="2" class="orange">
                                 <div class="mb-2">
                                     <svg id="diploma" xmlns="http://www.w3.org/2000/svg" width="134.145"
                                         height="125.718" viewBox="0 0 134.145 125.718">
@@ -764,12 +885,14 @@
                         </div>
                         <div class="fade-item ">
                             <p>
-                                2
+                                جميع البرامج التعليمية التدريبة مسجلة ومتاحة لك لمدة عام كامل لكي تتعلم في المكان
+                                والزمان المناسب لك
                             </p>
                         </div>
                         <div class="fade-item">
                             <p>
-                                3
+                                حتى تتأكد من اتقانك لكافة المحاور التدريبية سوف تمارس مشاريع عملية مناسبة لكل محور في
+                                برنامجك التدريبي
                             </p>
                         </div>
                     </div>
@@ -823,7 +946,7 @@
                     <div class="col-12 col-lg-6">
                         <div class="wrapper my-5 my-lg-0 text-center text-lg-left h-100 d-lg-flex align-items-center">
                             <div class="text">
-                                <h2>تصميم الموشن جرافيك</h2>
+                                <h2 class="font-weight-bold mb-4">تصميم الموشن جرافيك</h2>
                                 <p>أصبح الاقبال اليومي على مهنة تصميم الفيديو في تزايد مستمر حيث ان العالم العربي يعد
                                     في المركز الثاني عالميا بعد الولايات المتحدة في مجال مشاهدة الفيديو بشكل عام ويعد
                                     الموشن جرافيك أحد أفضل الوسائل التسويقية الموجودة اليوم للشركات والمؤسسات</p>
@@ -840,12 +963,12 @@
             </div>
         </section>
 
-        <section class="help ">
+        <section class="help pt-5">
             <div class="container">
                 <div class="row justify-content-center text-center text-md-left">
                     <div class="col-12 col-md-6 d-block d-md-flex align-items-center order-1 order-md-0">
                         <div class="wrapper">
-                            <h2 class="font-weight-bold">لا يزال لديك أسئلة حول التدريب؟</h2>
+                            <h2 class="font-weight-bold mb-3">لا يزال لديك أسئلة حول التدريب؟</h2>
                             <p>احصل على المزيد من المعلومات من الدعم الفني المتواجد لأجلك</p>
                             <a href="#" class="btn help-btn mx-auto mx-md-0"><img
                                     src="./guide-imgs/fi-rr-arrow-left.svg" alt="arrow"></a>
@@ -869,7 +992,7 @@
             crossorigin="anonymous"></script>
         <script>
             $(document).ready(function () {
-                $('.carousel .links li').on('click', function () {
+                $('.carousel .links li').on('mouseover', function () {
                     var fadeIndex = $(this).attr('data-slide-to');
 
                     //fade in the clicked item & fade out the current one
@@ -883,7 +1006,6 @@
                     //changeng links active state
                     $(this).addClass('active').siblings().removeClass('active');
                 });
-
             });
 
         </script>
